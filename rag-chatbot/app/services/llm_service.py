@@ -1,0 +1,151 @@
+"""
+LLM Service: Generate responses using Claude
+"""
+import anthropic
+from typing import List, Dict
+import logging
+
+logger = logging.getLogger(__name__)
+
+
+class LLMService:
+    """Service for generating responses using Claude 3.5 Sonnet."""
+
+    def __init__(self, api_key: str):
+        """
+        Initialize LLM service.
+
+        Args:
+            api_key: Anthropic API key
+        """
+        self.client = anthropic.Anthropic(api_key=api_key)
+        # Use Claude 3 Haiku - available with this API key
+        self.model = "claude-3-haiku-20240307"
+        logger.info("LLM service initialized with Claude 3 Haiku")
+
+    def generate_response(
+        self,
+        query: str,
+        context_entities: List[Dict],
+        relationships: List[Dict] = None,
+        temperature: float = 0.3,
+        max_tokens: int = 2048
+    ) -> str:
+        """
+        Generate a response based on query and context.
+
+        Args:
+            query: User's question
+            context_entities: List of relevant entities from knowledge graph
+            relationships: Optional list of relationships between entities
+            temperature: Sampling temperature (lower = more focused)
+            max_tokens: Maximum response length
+
+        Returns:
+            Generated response text
+        """
+        # Build context from entities
+        context_parts = []
+
+        if context_entities:
+            context_parts.append("# Relevant Entities from Knowledge Graph:\n")
+            for i, entity in enumerate(context_entities, 1):
+                label = entity.get('label', 'Unknown')
+                entity_type = entity.get('type', 'unknown')
+                description = entity.get('description', 'No description')
+                properties = entity.get('properties', {})
+                aliases = entity.get('aliases', [])
+
+                context_parts.append(f"\n## Entity {i}: {label} ({entity_type})")
+                context_parts.append(f"**Description:** {description}")
+
+                if aliases:
+                    context_parts.append(f"**Also known as:** {', '.join(aliases)}")
+
+                if properties:
+                    context_parts.append(f"**Additional info:** {properties}")
+
+        # Add relationships
+        if relationships:
+            context_parts.append("\n# Relationships:\n")
+            for rel in relationships[:15]:  # Limit to avoid token overflow
+                rel_type = rel.get('type', 'related_to')
+                description = rel.get('description', '')
+                context_parts.append(f"- {description} (relationship: {rel_type})")
+
+        context = "\n".join(context_parts)
+
+        # System prompt
+        system_prompt = """You are a knowledgeable market research assistant specializing in the toys and games industry in Asia Pacific.
+
+Your role is to answer questions using ONLY the information provided from the knowledge graph context.
+
+Key Guidelines:
+1. **Accuracy:** Base ALL claims on the provided entities and relationships. Never invent information.
+2. **Citations:** Reference entities by name when making claims (e.g., "According to the data on Japan...")
+3. **Honesty:** If the context doesn't contain enough information to answer fully, explicitly state what's missing
+4. **Structure:** Organize responses with clear headings and bullet points for readability
+5. **Tone:** Professional, analytical, and concise - like a market analyst
+6. **Entity Attribution:** Always cite which entities your information comes from
+
+If a question cannot be answered with the available context, say: "The available knowledge graph doesn't contain sufficient information about [topic]. The context includes information about [what IS available]."
+"""
+
+        # User prompt
+        user_prompt = f"""**Question:**
+{query}
+
+---
+
+**Knowledge Graph Context:**
+{context}
+
+---
+
+**Instructions:**
+Answer the question using only the context provided above. Cite specific entities by name when making claims. Structure your response clearly with headings if appropriate."""
+
+        # Generate response
+        try:
+            response = self.client.messages.create(
+                model=self.model,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                system=system_prompt,
+                messages=[{"role": "user", "content": user_prompt}]
+            )
+
+            return response.content[0].text
+
+        except Exception as e:
+            logger.error(f"Error generating response: {e}")
+            return f"I encountered an error generating a response: {str(e)}"
+
+    def generate_simple_response(self, query: str, context: str) -> str:
+        """
+        Simpler interface for generating responses.
+
+        Args:
+            query: User question
+            context: Pre-formatted context string
+
+        Returns:
+            Generated response
+        """
+        try:
+            response = self.client.messages.create(
+                model=self.model,
+                max_tokens=2048,
+                temperature=0.3,
+                system="You are a helpful market research assistant. Answer questions based only on the provided context.",
+                messages=[{
+                    "role": "user",
+                    "content": f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+                }]
+            )
+
+            return response.content[0].text
+
+        except Exception as e:
+            logger.error(f"Error generating response: {e}")
+            return f"Error: {str(e)}"

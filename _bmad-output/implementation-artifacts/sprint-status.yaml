@@ -1,0 +1,143 @@
+# generated: 2026-01-22
+# project: euromonitor-multi-agent-architecture
+# project_key: euromonitor-multi-agent-architecture
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-01-22
+project: euromonitor-multi-agent-architecture
+project_key: euromonitor-multi-agent-architecture
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  # Epic 1: Secure User Authentication & Access Control
+  epic-1: in-progress
+  1-1-user-registration-with-email-password: ready-for-dev
+  1-2-user-login-with-jwt-token-generation: backlog
+  1-3-user-role-assignment-user-admin-rbac: backlog
+  1-4-subscription-tier-mapping-permission-setup: backlog
+  1-5-geography-based-query-permission-enforcement: backlog
+  1-6-category-based-query-permission-enforcement: backlog
+  1-7-permission-validation-middleware: backlog
+  1-8-graceful-permission-denial-handling: backlog
+  epic-1-retrospective: optional
+
+  # Epic 2: Natural Language Query Interface
+  epic-2: backlog
+  2-1-project-initialization-vite-react-tailwind-shadcn-ui: backlog
+  2-2-main-query-interface-with-search-bar: backlog
+  2-3-example-queries-display-on-empty-state: backlog
+  2-4-optimistic-ui-query-acknowledgment: backlog
+  2-5-contextual-progress-indicators-during-processing: backlog
+  epic-2-retrospective: optional
+
+  # Epic 3: Knowledge Graph Foundation
+  epic-3: backlog
+  3-1-neo4j-database-setup-and-configuration: backlog
+  3-2-phase-1-2-data-model-implementation: backlog
+  3-3-passport-api-integration-layer: backlog
+  3-4-data-ingestion-pipeline-for-structured-passport-data: backlog
+  3-5-knowledge-graph-query-interface: backlog
+  3-6-data-quality-validation-and-coverage-monitoring: backlog
+  3-7-knowledge-graph-update-pipeline-for-data-refresh: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: Multi-Agent Intelligence Generation Pipeline (Mode 1)
+  epic-4: backlog
+  4-1-fastapi-backend-initialization-and-langgraph-setup: backlog
+  4-2-query-submission-api-and-state-management: backlog
+  4-3-query-interpreter-agent-implementation: backlog
+  4-4-data-retrieval-agent-implementation: backlog
+  4-5-narrative-synthesizer-agent-implementation: backlog
+  4-6-visualization-generator-agent-implementation: backlog
+  4-7-quality-scorer-agent-implementation: backlog
+  4-8-data-quality-validator-agent-implementation: backlog
+  4-9-citation-specialist-agent-integration-placeholder: backlog
+  4-10-report-assembler-agent-and-langgraph-orchestration: backlog
+  4-11-yaml-business-rules-engine-for-mode-1: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Citation & Transparency System
+  epic-5: backlog
+  5-1-citation-specialist-agent-full-implementation: backlog
+  5-2-citation-accuracy-validation-100-requirement: backlog
+  5-3-source-metadata-tracking-and-knowledge-graph-integration: backlog
+  5-4-broken-link-monitoring-and-automated-remediation: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Intelligence Report Display & Exploration
+  epic-6: backlog
+  6-1-report-display-container-and-layout: backlog
+  6-2-progressive-intelligence-disclosure-streaming-sections: backlog
+  6-3-perplexity-style-inline-citations-with-hover-previews: backlog
+  6-4-visualization-rendering-and-interaction: backlog
+  6-5-command-palette-cmd-ctrl-k-for-power-users: backlog
+  6-6-sidebar-navigation-and-report-history: backlog
+  6-7-accessibility-and-responsive-design-compliance: backlog
+  epic-6-retrospective: optional
+
+  # Epic 7: Report Export & Sharing
+  epic-7: backlog
+  7-1-pdf-export-generation-service: backlog
+  7-2-export-button-integration-and-download-ux: backlog
+  epic-7-retrospective: optional
+
+  # Epic 8: Administrative Management Dashboard
+  epic-8: backlog
+  8-1-admin-dashboard-main-interface: backlog
+  8-2-user-management-provisioning-and-deprovisioning: backlog
+  8-3-subscription-tier-mapping-and-permission-configuration: backlog
+  8-4-beta-group-management-and-feature-flags: backlog
+  8-5-audit-trail-access-and-compliance-reporting: backlog
+  epic-8-retrospective: optional
+
+  # Epic 9: Operations Monitoring & Observability
+  epic-9: backlog
+  9-1-operations-dashboard-and-cloudwatch-integration: backlog
+  9-2-query-audit-trail-and-orchestration-flow-debugging: backlog
+  9-3-knowledge-graph-health-monitoring-and-maintenance-tools: backlog
+  9-4-citation-accuracy-monitoring-and-broken-link-alerting: backlog
+  9-5-automated-health-alerts-and-incident-response: backlog
+  epic-9-retrospective: optional
+
+  # Epic 10: System Scalability & Performance Optimization
+  epic-10: backlog
+  10-1-aws-infrastructure-foundation-vpc-rds-elasticache: backlog
+  10-2-ecs-fargate-deployment-and-container-orchestration: backlog
+  10-3-asynchronous-task-processing-with-sqs-and-sns: backlog
+  10-4-caching-strategy-with-redis-for-performance: backlog
+  10-5-rate-limiting-and-abuse-prevention: backlog
+  10-6-security-hardening-encryption-sql-injection-xss-prevention: backlog
+  10-7-health-checks-and-graceful-degradation: backlog
+  10-8-performance-optimization-and-monitoring: backlog
+  epic-10-retrospective: optional

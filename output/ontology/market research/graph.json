@@ -1,0 +1,3910 @@
+{
+  "domain": "market research",
+  "schema_version": "1.0.2",
+  "extracted_at": "2026-01-23T11:11:40.979599Z",
+  "entities": [
+    {
+      "id": "entity_000000",
+      "canonical_key": "toys_and_games_in_asia_pacific",
+      "label": "toys and games in asia pacific",
+      "aliases": [
+        "Toys and Games in Asia Pacific",
+        "toys and games in japan",
+        "toys and games in asia pacific",
+        "toys and games market in asia pacific"
+      ],
+      "type": "market",
+      "description": "It is the biggest regional market globally and saw a strong rebound in 2023 after a dip in 2022. | The market for toys and games in Japan, which stagnated in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "forecast": "Positive if gradually slowing growth"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:17Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000000",
+            "label": "toys and games in asia pacific",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:40Z"
+          },
+          {
+            "entity_id": "entity_000090",
+            "label": "toys and games in japan",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:06Z"
+          },
+          {
+            "entity_id": "entity_000105",
+            "label": "toys and games market in asia pacific",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:17Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000001",
+      "canonical_key": "japan",
+      "label": "japan",
+      "aliases": [
+        "japan",
+        "asia pacific"
+      ],
+      "type": "location",
+      "description": "The geographical region of Asia Pacific, which is the largest market for toys and games globally.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:06Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000001",
+            "label": "japan",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:41Z"
+          },
+          {
+            "entity_id": "entity_000089",
+            "label": "asia pacific",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:06Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000002",
+      "canonical_key": "south_korea",
+      "label": "south korea",
+      "aliases": [],
+      "type": "location",
+      "description": "A country in Asia where the toys and games market was declining in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:41Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000002",
+            "label": "south korea",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:41Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000003",
+      "canonical_key": "china",
+      "label": "china",
+      "aliases": [],
+      "type": "location",
+      "description": "A country in Asia which saw a strong rebound in its toys and games market in 2023, helping to drive regional growth.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:41Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000003",
+            "label": "china",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:41Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000004",
+      "canonical_key": "kidults",
+      "label": "kidults",
+      "aliases": [
+        "adult consumers"
+      ],
+      "type": "consumer_segment",
+      "description": "Adults who buy toys and games for themselves. This segment is a key target for companies due to declining birth rates and their higher spending power.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:42Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000004",
+            "label": "kidults",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:42Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000005",
+      "canonical_key": "traditional_toys_and_games",
+      "label": "traditional toys and games",
+      "aliases": [
+        "traditional toys and games",
+        "arts and crafts"
+      ],
+      "type": "category",
+      "description": "A subcategory of Traditional Toys and Games, as defined by the Euromonitor Passport taxonomy.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:25Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000005",
+            "label": "traditional toys and games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:42Z"
+          },
+          {
+            "entity_id": "entity_000116",
+            "label": "arts and crafts",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:25Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000006",
+      "canonical_key": "genderneutral_toys",
+      "label": "genderneutral toys",
+      "aliases": [],
+      "type": "trend",
+      "description": "A trend of creating products that are not aimed at a specific gender to widen the target market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000007",
+      "canonical_key": "chinese_consumers",
+      "label": "chinese consumers",
+      "aliases": [],
+      "type": "consumer_segment",
+      "description": "Consumers in China, who are showing a growing appreciation for toys reflecting their cultural identity.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000008",
+      "canonical_key": "toys_reflecting_chinese_cultural_identity",
+      "label": "toys reflecting chinese cultural identity",
+      "aliases": [
+        "toys reflecting chinese cultural identity",
+        "toys with cultural identity"
+      ],
+      "type": "trend",
+      "description": "A growing preference among Chinese consumers for toys that reflect their own cultural identity.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:04Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000085",
+            "label": "toys with cultural identity",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:04Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000009",
+      "canonical_key": "declining_birth_rates",
+      "label": "declining birth rates",
+      "aliases": [],
+      "type": "trend",
+      "description": "Declining birth rates in major Asia Pacific markets are causing companies to increasingly target the kidults segment.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:42Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000009",
+            "label": "declining birth rates",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:42Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000010",
+      "canonical_key": "ecommerce",
+      "label": "ecommerce",
+      "aliases": [],
+      "type": "distribution_channel",
+      "description": "The online retail channel, which is expanding its share of distribution in the toys and games market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:43Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000010",
+            "label": "ecommerce",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:43Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000011",
+      "canonical_key": "offline_retail",
+      "label": "offline retail",
+      "aliases": [
+        "physical stores",
+        "appliances and electronics specialists",
+        "offline stores",
+        "offline retail",
+        "vending channel"
+      ],
+      "type": "distribution_channel",
+      "description": "Brick-and-mortar retail stores, which need to offer experiential visits to compete with e-commerce. | A retail channel in Japan that accounts for 14% of toy and game sales.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:13Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000011",
+            "label": "offline retail",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:43Z"
+          },
+          {
+            "entity_id": "entity_000098",
+            "label": "appliances and electronics specialists",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:12Z"
+          },
+          {
+            "entity_id": "entity_000100",
+            "label": "vending channel",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:13Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000012",
+      "canonical_key": "experiential_visits",
+      "label": "experiential visits",
+      "aliases": [],
+      "type": "trend",
+      "description": "The strategy for offline stores to create fun and engaging spaces to attract consumers and differentiate from competitors.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:44Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000012",
+            "label": "experiential visits",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:44Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000013",
+      "canonical_key": "video_games",
+      "label": "video games",
+      "aliases": [],
+      "type": "category",
+      "description": "The category of electronic video games, which outsells traditional toys and games by more than three times in Asia Pacific.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:45Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000013",
+            "label": "video games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:45Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000014",
+      "canonical_key": "india",
+      "label": "india",
+      "aliases": [],
+      "type": "location",
+      "description": "A country in Asia with low per capita spend on toys and games, expected to be a dynamic market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:46Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000014",
+            "label": "india",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:46Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000015",
+      "canonical_key": "esports",
+      "label": "esports",
+      "aliases": [],
+      "type": "trend",
+      "description": "The increasing popularity of e-sports is a key factor boosting the growth of video games, particularly mobile gaming, in India.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:44Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000015",
+            "label": "esports",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:44Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000016",
+      "canonical_key": "mobile_gaming",
+      "label": "mobile gaming",
+      "aliases": [
+        "mobile gaming",
+        "online games and subscriptions"
+      ],
+      "type": "subcategory",
+      "description": "A subcategory of video games played on mobile devices, which accounts for a majority of video games software sales in Asia Pacific.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:24Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000016",
+            "label": "mobile gaming",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:45Z"
+          },
+          {
+            "entity_id": "entity_000114",
+            "label": "online games and subscriptions",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:24Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000017",
+      "canonical_key": "rising_smartphone_penetration",
+      "label": "rising smartphone penetration",
+      "aliases": [],
+      "type": "trend",
+      "description": "Rising smartphone penetration is a factor expected to boost demand for video games in India.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:45Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000017",
+            "label": "rising smartphone penetration",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:45Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000018",
+      "canonical_key": "availability_of_cheap_smartphonesdata_plans",
+      "label": "availability of cheap smartphonesdata plans",
+      "aliases": [
+        "availability of cheap smartphonesdata plans",
+        "cheap smartphones and data plans"
+      ],
+      "type": "trend",
+      "description": "The availability of cheap smartphones and data plans is a factor expected to boost demand for video games in India.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:06Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000088",
+            "label": "cheap smartphones and data plans",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:06Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000019",
+      "canonical_key": "video_games_software",
+      "label": "video games software",
+      "aliases": [
+        "video games software",
+        "video games hardware"
+      ],
+      "type": "subcategory",
+      "description": "Software for video games, which dominates overall toys and games sales in Asia Pacific.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:21Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000019",
+            "label": "video games software",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:46Z"
+          },
+          {
+            "entity_id": "entity_000111",
+            "label": "video games hardware",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:21Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000020",
+      "canonical_key": "north_america",
+      "label": "north america",
+      "aliases": [],
+      "type": "location",
+      "description": "The region with the second highest sales of traditional toys and games globally.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000021",
+      "canonical_key": "western_europe",
+      "label": "western europe",
+      "aliases": [],
+      "type": "location",
+      "description": "A region that Asia Pacific has recently overtaken in traditional toys and games sales.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000022",
+      "canonical_key": "indonesia",
+      "label": "indonesia",
+      "aliases": [],
+      "type": "location",
+      "description": "A country in Asia with low per capita spend on toys and games, expected to be a dynamic market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:47Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000022",
+            "label": "indonesia",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:47Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000023",
+      "canonical_key": "games_and_puzzles",
+      "label": "games and puzzles",
+      "aliases": [],
+      "type": "category",
+      "description": "A category within traditional toys and games that saw strong growth in Japan in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:47Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000023",
+            "label": "games and puzzles",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:47Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000024",
+      "canonical_key": "trading_card_games",
+      "label": "trading card games",
+      "aliases": [],
+      "type": "subcategory",
+      "description": "A subcategory of games and puzzles, sales of which have been growing rapidly in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:48Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000024",
+            "label": "trading card games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:48Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000025",
+      "canonical_key": "pokémon_cards",
+      "label": "pokémon cards",
+      "aliases": [],
+      "type": "brand",
+      "description": "A leading brand of trading card games that has been central to the category's boom in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:48Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000025",
+            "label": "pokémon cards",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:48Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000026",
+      "canonical_key": "yugioh",
+      "label": "yugioh",
+      "aliases": [],
+      "type": "brand",
+      "description": "A long-selling brand of trading card games in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:48Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000026",
+            "label": "yugioh",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:48Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000027",
+      "canonical_key": "duel_masters",
+      "label": "duel masters",
+      "aliases": [],
+      "type": "brand",
+      "description": "A long-selling brand of trading card games in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:49Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000027",
+            "label": "duel masters",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:49Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000028",
+      "canonical_key": "weiß_schwarz",
+      "label": "weiß schwarz",
+      "aliases": [],
+      "type": "brand",
+      "description": "A long-selling brand of trading card games in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:49Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000028",
+            "label": "weiß schwarz",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:49Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000029",
+      "canonical_key": "one_piece_card_game",
+      "label": "one piece card game",
+      "aliases": [],
+      "type": "brand",
+      "description": "A newcomer brand of trading card games that has been supporting momentum in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:50Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000029",
+            "label": "one piece card game",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:50Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000030",
+      "canonical_key": "baby_and_infant_toys",
+      "label": "baby and infant toys",
+      "aliases": [
+        "baby and infant toys",
+        "toys and games"
+      ],
+      "type": "category",
+      "description": "A category within traditional toys and games in China that faced challenges due to the declining birth rate.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:21Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000030",
+            "label": "baby and infant toys",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:50Z"
+          },
+          {
+            "entity_id": "entity_000110",
+            "label": "toys and games",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:21Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000031",
+      "canonical_key": "netease",
+      "label": "netease",
+      "aliases": [],
+      "type": "company",
+      "description": "A leading video games company in China. Its mobile game Justice Online attracted players through price reductions.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:50Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000031",
+            "label": "netease",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:50Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000032",
+      "canonical_key": "justice_online",
+      "label": "justice online",
+      "aliases": [],
+      "type": "brand",
+      "description": "A mobile game from NetEase.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:51Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000032",
+            "label": "justice online",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:51Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000033",
+      "canonical_key": "mihoyo",
+      "label": "mihoyo",
+      "aliases": [],
+      "type": "company",
+      "description": "A leading video games company in China that launched the new game Honkai: Star Rail.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:51Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000033",
+            "label": "mihoyo",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:51Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000034",
+      "canonical_key": "honkai_star_rail",
+      "label": "honkai star rail",
+      "aliases": [],
+      "type": "brand",
+      "description": "A new game released by miHoYo.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:51Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000034",
+            "label": "honkai star rail",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:51Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000035",
+      "canonical_key": "dolls_and_accessories",
+      "label": "dolls and accessories",
+      "aliases": [
+        "dolls and accessories",
+        "action figures and accessories",
+        "dressup and role play"
+      ],
+      "type": "category",
+      "description": "A category within traditional toys and games in Japan that saw a sharp decline in value sales in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:25Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000035",
+            "label": "dolls and accessories",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:52Z"
+          },
+          {
+            "entity_id": "entity_000115",
+            "label": "action figures and accessories",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:24Z"
+          },
+          {
+            "entity_id": "entity_000117",
+            "label": "dressup and role play",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:25Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000036",
+      "canonical_key": "popochan",
+      "label": "popochan",
+      "aliases": [],
+      "type": "brand",
+      "description": "A major doll brand in Japan that was discontinued, contributing to the decline in its category.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:52Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000036",
+            "label": "popochan",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:52Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000037",
+      "canonical_key": "increasing_awareness_of_gender_equality",
+      "label": "increasing awareness of gender equality",
+      "aliases": [],
+      "type": "trend",
+      "description": "A societal trend leading to the release of more gender-neutral toys.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000038",
+      "canonical_key": "lego",
+      "label": "lego",
+      "aliases": [
+        "lego",
+        "capsule toys"
+      ],
+      "type": "company",
+      "description": "A leading global toy company that launched five new gender-neutral series in March 2024 | It is the number one player in traditional toys and games in China but lost share in 2023. | A type of toy popular in the vending channel in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:13Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000038",
+            "label": "lego",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:53Z"
+          },
+          {
+            "entity_id": "entity_000101",
+            "label": "capsule toys",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:13Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000039",
+      "canonical_key": "traditional_toys_and_games_stores",
+      "label": "traditional toys and games stores",
+      "aliases": [],
+      "type": "distribution_channel",
+      "description": "An important retail channel for traditional toys and games in Asia Pacific.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000040",
+      "canonical_key": "douyin",
+      "label": "douyin",
+      "aliases": [],
+      "type": "distribution_channel",
+      "description": "A live streaming e-commerce platform in China where sales of traditional toys and games continued to grow in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:54Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000040",
+            "label": "douyin",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:54Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000041",
+      "canonical_key": "live_streaming_ecommerce",
+      "label": "live streaming ecommerce",
+      "aliases": [],
+      "type": "trend",
+      "description": "A rapidly developing e-commerce model in China that is driving sales on platforms like Douyin.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000042",
+      "canonical_key": "tencent",
+      "label": "tencent",
+      "aliases": [],
+      "type": "company",
+      "description": "The overall leader in the Chinese toys and games market, heading up video games. It lost market share in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:54Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000042",
+            "label": "tencent",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:54Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000043",
+      "canonical_key": "construction_toys",
+      "label": "construction toys",
+      "aliases": [],
+      "type": "category",
+      "description": "A category within traditional toys and games where competition intensified in China.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000044",
+      "canonical_key": "bloks",
+      "label": "bloks",
+      "aliases": [],
+      "type": "brand",
+      "description": "A domestic Chinese construction toy brand that gained market share at the expense of LEGO in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:54Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000044",
+            "label": "bloks",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:54Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000045",
+      "canonical_key": "enlighten_qman",
+      "label": "enlighten qman",
+      "aliases": [],
+      "type": "brand",
+      "description": "A domestic Chinese construction toy brand that gained market share at the expense of LEGO in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:55Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000045",
+            "label": "enlighten qman",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:55Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000046",
+      "canonical_key": "sembo",
+      "label": "sembo",
+      "aliases": [],
+      "type": "brand",
+      "description": "A domestic Chinese construction toy brand that gained market share at the expense of LEGO in 2023. It develops series with local cultural themes and IPs.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:55Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000046",
+            "label": "sembo",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:55Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000047",
+      "canonical_key": "genshin_impact",
+      "label": "genshin impact",
+      "aliases": [
+        "genshin impact",
+        "meta quest 3"
+      ],
+      "type": "brand",
+      "description": "A massively popular game from miHoYo with a large user base. | A product launch that contributed to growth in the AR/VR headsets category in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:10Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000047",
+            "label": "genshin impact",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:56Z"
+          },
+          {
+            "entity_id": "entity_000095",
+            "label": "meta quest 3",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:10Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000048",
+      "canonical_key": "playstation",
+      "label": "playstation",
+      "aliases": [
+        "playstation 5 slim",
+        "PlayStation 5",
+        "playstation 5",
+        "ps",
+        "playstation",
+        "PlayStation 5 Slim"
+      ],
+      "type": "brand",
+      "description": "A video gaming brand consisting of five home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines | A smaller version of the PlayStation 5 console, launched by Sony in India in April 2024.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "launch_location": "India",
+        "launch_date": "April 2024"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:15Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000048",
+            "label": "playstation",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:56Z"
+          },
+          {
+            "entity_id": "entity_000102",
+            "label": "playstation 5",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:15Z"
+          },
+          {
+            "entity_id": "entity_000103",
+            "label": "playstation 5 slim",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:15Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000049",
+      "canonical_key": "nintendo",
+      "label": "nintendo",
+      "aliases": [
+        "playstation vr2",
+        "Nintendo Switch",
+        "nintendo",
+        "nintendo switch"
+      ],
+      "type": "company",
+      "description": "A Japanese multinational video game company headquartered in Kyoto, Japan | A product launch that contributed to growth in the AR/VR headsets category in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:11Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000049",
+            "label": "nintendo",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:56Z"
+          },
+          {
+            "entity_id": "entity_000094",
+            "label": "playstation vr2",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:09Z"
+          },
+          {
+            "entity_id": "entity_000096",
+            "label": "nintendo switch",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:11Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000050",
+      "canonical_key": "pop_mart",
+      "label": "pop mart",
+      "aliases": [],
+      "type": "company",
+      "description": "A Chinese toy company known for its blind-box collectible figures.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000051",
+      "canonical_key": "blind_collectables_craze",
+      "label": "blind collectables craze",
+      "aliases": [],
+      "type": "trend",
+      "description": "A trend where consumers purchase products in sealed packaging, without knowing the specific contents until the package is opened.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000052",
+      "canonical_key": "pokémon",
+      "label": "pokémon",
+      "aliases": [
+        "pokémon",
+        "tamagotchi",
+        "pokemon"
+      ],
+      "type": "brand",
+      "description": "A Japanese media franchise managed by The Pokémon Company, a company founded by Nintendo, Game Freak, and Creatures. | A product whose strong performance contributed to growth in the hand-held consoles category in Japan.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:18Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000097",
+            "label": "tamagotchi",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:11Z"
+          },
+          {
+            "entity_id": "entity_000108",
+            "label": "pokemon",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:18Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000053",
+      "canonical_key": "trading_cards",
+      "label": "trading cards",
+      "aliases": [],
+      "type": "category",
+      "description": "A type of card game that mixes strategic deck building with features of trading cards, introduced with Magic: The Gathering in 1993.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000054",
+      "canonical_key": "sony",
+      "label": "sony",
+      "aliases": [
+        "sony",
+        "digital"
+      ],
+      "type": "company",
+      "description": "A Japanese multinational conglomerate corporation headquartered in Kōnan, Minato, Tokyo | A subcategory of Video Games Software, as defined by the Euromonitor Passport taxonomy.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:22Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000054",
+            "label": "sony",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:57Z"
+          },
+          {
+            "entity_id": "entity_000113",
+            "label": "digital",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:22Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000055",
+      "canonical_key": "chinese_toys_and_games_market",
+      "label": "chinese toys and games market",
+      "aliases": [
+        "chinese toys and games market",
+        "toys and games market in china"
+      ],
+      "type": "market",
+      "description": "The market for toys and games in China. It is expected to see solid growth over the forecast period.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "forecast": "solid if unspectacular growth"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:17Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000106",
+            "label": "toys and games market in china",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:17Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000056",
+      "canonical_key": "construction",
+      "label": "construction",
+      "aliases": [],
+      "type": "category",
+      "description": "A subcategory of traditional toys and games. It is one of the two biggest categories in China's traditional toys market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:57Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000056",
+            "label": "construction",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:57Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000057",
+      "canonical_key": "licensed_traditional_toys_and_games",
+      "label": "licensed traditional toys and games",
+      "aliases": [],
+      "type": "trend",
+      "description": "The trend of toys and games being licensed based on popular media franchises.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000058",
+      "canonical_key": "trendy_and_collectible_toys",
+      "label": "trendy and collectible toys",
+      "aliases": [],
+      "type": "trend",
+      "description": "The trend of toys that are fashionable and designed to be collected.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000059",
+      "canonical_key": "kidult_users",
+      "label": "kidult users",
+      "aliases": [],
+      "type": "consumer_segment",
+      "description": "Adults who buy and play with toys, including traditional toys and games.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000060",
+      "canonical_key": "mobile_games",
+      "label": "mobile games",
+      "aliases": [
+        "mobile games",
+        "video games in india"
+      ],
+      "type": "subcategory",
+      "description": "The largest subcategory of video games in China, expected to continue growing.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:05Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000060",
+            "label": "mobile games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:57Z"
+          },
+          {
+            "entity_id": "entity_000087",
+            "label": "video games in india",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:05Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000061",
+      "canonical_key": "crossplatform_games",
+      "label": "crossplatform games",
+      "aliases": [],
+      "type": "trend",
+      "description": "The emergence of games that can be played on multiple platforms, providing additional sales opportunities for mobile games.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:47Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000061",
+            "label": "crossplatform games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:47Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000062",
+      "canonical_key": "computer_games",
+      "label": "computer games",
+      "aliases": [],
+      "type": "subcategory",
+      "description": "A subcategory of Video Games Software, as defined by the Euromonitor Passport taxonomy.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:01Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000062",
+            "label": "computer games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:01Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000063",
+      "canonical_key": "console_games",
+      "label": "console games",
+      "aliases": [
+        "console games",
+        "handheld consoles",
+        "arvr headsets",
+        "static consoles"
+      ],
+      "type": "subcategory",
+      "description": "Video games played on a dedicated electronic device that outputs a video signal or visual image to display a video game that one or more people can play. | A category in video games that recorded high growth in Japan in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:22Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000063",
+            "label": "console games",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:01Z"
+          },
+          {
+            "entity_id": "entity_000092",
+            "label": "arvr headsets",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:08Z"
+          },
+          {
+            "entity_id": "entity_000093",
+            "label": "handheld consoles",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:08Z"
+          },
+          {
+            "entity_id": "entity_000112",
+            "label": "static consoles",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:22Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000064",
+      "canonical_key": "subscriptions",
+      "label": "subscriptions",
+      "aliases": [],
+      "type": "metric",
+      "description": "A business model where a customer must pay a recurring price at regular intervals to access a product or service.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000065",
+      "canonical_key": "dena",
+      "label": "dena",
+      "aliases": [
+        "dena",
+        "edion"
+      ],
+      "type": "company",
+      "description": "An appliances and electronics specialist retailer in Japan that is enhancing its toy and game sections with experiential features.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:13Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000065",
+            "label": "dena",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:58Z"
+          },
+          {
+            "entity_id": "entity_000099",
+            "label": "edion",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:13Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000066",
+      "canonical_key": "pokémon_trading_card_game_pocket_mobile_app",
+      "label": "pokémon trading card game pocket mobile app",
+      "aliases": [
+        "pokémon trading card game pocket",
+        "pokémon trading card game pocket mobile app",
+        "pokemon trading card game pocket mobile app"
+      ],
+      "type": "product",
+      "description": "A mobile app for the Pokémon Trading Card Game, developed by Pokémon and DeNA, with a targeted launch in 2024.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "launch_year": 2024,
+        "type": "mobile app"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:16Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000104",
+            "label": "pokemon trading card game pocket mobile app",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:16Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000067",
+      "canonical_key": "nintendos_nextgen_console",
+      "label": "nintendos nextgen console",
+      "aliases": [
+        "nintendos nextgen console",
+        "nintendo nextgen console"
+      ],
+      "type": "product",
+      "description": "The next-generation video game console from Nintendo, expected to be launched between October 2024 and March 2025.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "expected_launch_period": "October 2024 to March 2025"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:18Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000107",
+            "label": "nintendo nextgen console",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:18Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000068",
+      "canonical_key": "toys_and_games_market_in_south_korea",
+      "label": "toys and games market in south korea",
+      "aliases": [
+        "toys and games market in south korea",
+        "toys and games in south korea"
+      ],
+      "type": "market",
+      "description": "The market for toys and games in South Korea, which saw a notable drop in sales in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "forecast": "return to growth"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:07Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000068",
+            "label": "toys and games market in south korea",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:58Z"
+          },
+          {
+            "entity_id": "entity_000091",
+            "label": "toys and games in south korea",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:07Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000069",
+      "canonical_key": "new_character_developments",
+      "label": "new character developments",
+      "aliases": [],
+      "type": "trend",
+      "description": "The development of new characters to drive interest and sales in toys and games.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000070",
+      "canonical_key": "ai_advances",
+      "label": "ai advances",
+      "aliases": [],
+      "type": "trend",
+      "description": "A trend involving the use of artificial intelligence in toys to create interactive and personalized experiences.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:59Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000070",
+            "label": "ai advances",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:59Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000071",
+      "canonical_key": "kidult_trend",
+      "label": "kidult trend",
+      "aliases": [
+        "kidult trend",
+        "childhood nostalgia"
+      ],
+      "type": "trend",
+      "description": "Toy companies are tapping into the nostalgia of adult consumers for their childhood to drive sales in the kidults segment.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:05Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000071",
+            "label": "kidult trend",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:59Z"
+          },
+          {
+            "entity_id": "entity_000086",
+            "label": "childhood nostalgia",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:05Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000072",
+      "canonical_key": "edutech_innovations",
+      "label": "edutech innovations",
+      "aliases": [],
+      "type": "trend",
+      "description": "A trend involving innovations in educational technology, which is a factor for growth in the South Korean market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:10:59Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000072",
+            "label": "edutech innovations",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:10:59Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000073",
+      "canonical_key": "aienhanced_toys",
+      "label": "aienhanced toys",
+      "aliases": [],
+      "type": "category",
+      "description": "Toys that are enhanced with artificial intelligence to provide interactive experiences.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000074",
+      "canonical_key": "children",
+      "label": "children",
+      "aliases": [],
+      "type": "consumer_segment",
+      "description": "People of a young age.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000075",
+      "canonical_key": "adults",
+      "label": "adults",
+      "aliases": [],
+      "type": "consumer_segment",
+      "description": "People who are fully grown or developed.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000076",
+      "canonical_key": "older_people",
+      "label": "older people",
+      "aliases": [],
+      "type": "consumer_segment",
+      "description": "People of advanced age.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000077",
+      "canonical_key": "south_korean_companies",
+      "label": "south korean companies",
+      "aliases": [],
+      "type": "company",
+      "description": "Video game companies based in South Korea that are targeting global expansion.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "strategy": "Targeting global expansion, creating PC/console games for international audiences"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:00Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000077",
+            "label": "south korean companies",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000078",
+      "canonical_key": "global_expansion",
+      "label": "global expansion",
+      "aliases": [],
+      "type": "trend",
+      "description": "A strategy by companies to expand their business operations into other countries.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000079",
+      "canonical_key": "international_audiences",
+      "label": "international audiences",
+      "aliases": [],
+      "type": "consumer_segment",
+      "description": "Audiences for video games located in countries around the world.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "entity_000080",
+      "canonical_key": "north_american_markets",
+      "label": "north american markets",
+      "aliases": [],
+      "type": "market",
+      "description": "The collective term for the video game markets in North America, which South Korean companies are targeting.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:00Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000080",
+            "label": "north american markets",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000081",
+      "canonical_key": "european_markets",
+      "label": "european markets",
+      "aliases": [],
+      "type": "market",
+      "description": "The collective term for the video game markets in Europe, which South Korean companies are targeting.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:00Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000081",
+            "label": "european markets",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:00Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000082",
+      "canonical_key": "probabilitybased_items",
+      "label": "probabilitybased items",
+      "aliases": [
+        "covid19 resurgence in china",
+        "probabilitybased items",
+        "probabilitybased items disclosure"
+      ],
+      "type": "regulation",
+      "description": "In-game items that are purchased by players for a fee and are influenced by chance factors | A resurgence of COVID-19 cases in China in 2022 led to renewed lockdowns and a decline in toy and games sales. | A regulation in South Korea since March 2024 requiring video game operators to disclose the probabilities of chance-based items purchased by players.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "objective": "Ensure transparency and consumer awareness",
+        "jurisdiction": "South Korea",
+        "effective_date": "March 2024"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:19Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000082",
+            "label": "covid19 resurgence in china",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:01Z"
+          },
+          {
+            "entity_id": "entity_000109",
+            "label": "probabilitybased items disclosure",
+            "merge_reason": "semantic_duplicate",
+            "timestamp": "2026-01-23T11:11:19Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000083",
+      "canonical_key": "video_games_operators",
+      "label": "video games operators",
+      "aliases": [
+        "video games operators",
+        "genderneutral products"
+      ],
+      "type": "organization",
+      "description": "Operators of video games that are subject to regulations regarding probability-based items. | A trend where toy and game companies are increasingly focusing on products that are not targeted at a specific gender to widen their market.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:03Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000083",
+            "label": "genderneutral products",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:03Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "entity_000084",
+      "canonical_key": "euromonitor_international",
+      "label": "euromonitor international",
+      "aliases": [
+        "euromonitor international",
+        "toys and games in china"
+      ],
+      "type": "company",
+      "description": "A global market research company providing strategic intelligence on industries, countries, and consumers. | The market for toys and games in China, which experienced a strong bounceback in 2023.",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt"
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "first_seen": "2026-01-23T11:07:50Z",
+        "last_updated": "2026-01-23T11:11:04Z",
+        "merged_from": [
+          {
+            "entity_id": "entity_000084",
+            "label": "toys and games in china",
+            "merge_reason": "exact_match",
+            "timestamp": "2026-01-23T11:11:04Z"
+          }
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_000000",
+      "type": "location_of",
+      "from_": "entity_000001",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in Japan is part of the larger Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000001",
+      "type": "location_of",
+      "from_": "entity_000002",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in South Korea is part of the larger Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000002",
+      "type": "location_of",
+      "from_": "entity_000003",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in China is part of the larger Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000003",
+      "type": "location_of",
+      "from_": "entity_000014",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in India is part of the larger Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000004",
+      "type": "location_of",
+      "from_": "entity_000022",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in Indonesia is part of the larger Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000005",
+      "type": "targets",
+      "from_": "entity_000005",
+      "to": "entity_000004",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Kidults are a key target consumer segment for the traditional toys and games category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000006",
+      "type": "prefers",
+      "from_": "entity_000007",
+      "to": "entity_000008",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Chinese consumers are showing a growing appreciation for toys that reflect their cultural identity."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000007",
+      "type": "impacts",
+      "from_": "entity_000009",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Declining birth rates are negatively impacting the traditional toys and games market by shrinking the children's market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000076",
+            "type": "impacts",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000008",
+      "type": "competes_with",
+      "from_": "entity_000010",
+      "to": "entity_000011",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "E-commerce competes with offline retail for market share in the toys and games industry."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000077",
+            "type": "competes_with",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000009",
+      "type": "offers",
+      "from_": "entity_000011",
+      "to": "entity_000012",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Offline retail stores are increasingly offering experiential visits to attract customers and compete with e-commerce."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000010",
+      "type": "supports",
+      "from_": "entity_000015",
+      "to": "entity_000016",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The increasing popularity of e-sports in India is supporting the growth of mobile gaming."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000011",
+      "type": "drives",
+      "from_": "entity_000017",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The rising penetration of smartphones in India is boosting demand for video games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000012",
+      "type": "drives",
+      "from_": "entity_000018",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The availability of cheap smartphones and data plans in India is boosting demand for video games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000013",
+      "type": "subcategory_of",
+      "from_": "entity_000016",
+      "to": "entity_000019",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Mobile gaming is a subcategory within the broader video games software category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000014",
+      "type": "subcategory_of",
+      "from_": "entity_000019",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Video games software is a subcategory of the main video games category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000015",
+      "type": "competes_with",
+      "from_": "entity_000000",
+      "to": "entity_000020",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The Toys and Games market in Asia Pacific competes with the North American market in terms of sales volume."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000016",
+      "type": "competes_with",
+      "from_": "entity_000000",
+      "to": "entity_000021",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The Toys and Games market in Asia Pacific competes with the Western European market in terms of sales volume."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000017",
+      "type": "drives_growth_in",
+      "from_": "entity_000023",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The games and puzzles category showed dynamic growth, which helped the overall traditional toys and games market in Japan record positive growth in 2023."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000018",
+      "type": "subcategory_of",
+      "from_": "entity_000024",
+      "to": "entity_000023",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Trading card games are a subcategory of the games and puzzles category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000019",
+      "type": "is_a",
+      "from_": "entity_000025",
+      "to": "entity_000024",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Pokémon cards are a brand within the trading card games subcategory."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000020",
+      "type": "is_a",
+      "from_": "entity_000026",
+      "to": "entity_000024",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Yu-Gi-Oh! is a brand within the trading card games subcategory."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000021",
+      "type": "is_a",
+      "from_": "entity_000027",
+      "to": "entity_000024",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Duel Masters is a brand within the trading card games subcategory."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000022",
+      "type": "is_a",
+      "from_": "entity_000028",
+      "to": "entity_000024",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Weiß Schwarz is a brand within the trading card games subcategory."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000023",
+      "type": "is_a",
+      "from_": "entity_000029",
+      "to": "entity_000024",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "One Piece Card Game is a brand within the trading card games subcategory."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000024",
+      "type": "impacts",
+      "from_": "entity_000009",
+      "to": "entity_000030",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The continued decline in the birth rate in China has led to challenges and declining sales for the baby and infant toys category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000025",
+      "type": "owns",
+      "from_": "entity_000031",
+      "to": "entity_000032",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "NetEase is the company that developed and operates the mobile game Justice Online."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000026",
+      "type": "owns",
+      "from_": "entity_000033",
+      "to": "entity_000034",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "miHoYo is the company that developed and released the game Honkai: Star Rail."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000027",
+      "type": "impacts",
+      "from_": "entity_000036",
+      "to": "entity_000035",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The discontinuation of the Popo-chan brand negatively affected the sales performance of the dolls and accessories category in Japan."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000028",
+      "type": "drives",
+      "from_": "entity_000037",
+      "to": "entity_000006",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The increasing awareness of gender equality is a trend that is driving the release of more gender-neutral toys."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000029",
+      "type": "drives_growth_on",
+      "from_": "entity_000041",
+      "to": "entity_000040",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Live streaming e-commerce is driving sales growth for traditional toys and games on the Douyin platform in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000030",
+      "type": "operates_in",
+      "from_": "entity_000042",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Tencent is the leading company in the video games sector in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000031",
+      "type": "operates_in",
+      "from_": "entity_000038",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Lego is the leading company in the traditional toys and games sector in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000032",
+      "type": "competes_with",
+      "from_": "entity_000044",
+      "to": "entity_000038",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Bloks is a domestic Chinese brand that competes with Lego in the construction toys category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000091",
+            "type": "competes_with",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000033",
+      "type": "competes_with",
+      "from_": "entity_000045",
+      "to": "entity_000038",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Enlighten (Qman) is a domestic Chinese brand that competes with Lego in the construction toys category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000092",
+            "type": "competes_with",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000034",
+      "type": "competes_with",
+      "from_": "entity_000046",
+      "to": "entity_000038",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Sembo is a domestic Chinese brand that competes with Lego in the construction toys category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000093",
+            "type": "competes_with",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000035",
+      "type": "owns",
+      "from_": "entity_000033",
+      "to": "entity_000047",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "miHoYo is the company that developed and operates the game Genshin Impact."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000036",
+      "type": "competes_with",
+      "from_": "entity_000048",
+      "to": "entity_000049",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "PlayStation is reported to have made major share gains on Nintendo in the brand rankings in Asia Pacific in 2023."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000098",
+            "type": "competes_with",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000037",
+      "type": "competes_with",
+      "from_": "entity_000048",
+      "to": "entity_000038",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "PlayStation is reported to have made major share gains on Lego in the brand rankings in Asia Pacific in 2023."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000099",
+            "type": "competes_with",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000038",
+      "type": "operates_in",
+      "from_": "entity_000050",
+      "to": "entity_000051",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Pop Mart experienced dynamic growth due to its involvement in the blind collectables craze."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000039",
+      "type": "related_to",
+      "from_": "entity_000052",
+      "to": "entity_000053",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Pokémon's success was linked to the popularity of trading cards."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000040",
+      "type": "related_to",
+      "from_": "entity_000027",
+      "to": "entity_000053",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Duel Masters' success was linked to the popularity of trading cards."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000041",
+      "type": "related_to",
+      "from_": "entity_000026",
+      "to": "entity_000053",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Yu-Gi-Oh!'s success was linked to the popularity of trading cards."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000042",
+      "type": "operates_in",
+      "from_": "entity_000049",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Nintendo is one of the top brands in the toys and games market in Asia Pacific."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000043",
+      "type": "operates_in",
+      "from_": "entity_000038",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Lego is one of the top brands in the toys and games market in Asia Pacific."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000044",
+      "type": "operates_in",
+      "from_": "entity_000048",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "PlayStation is one of the top brands in the toys and games market in Asia Pacific."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000045",
+      "type": "operates_in",
+      "from_": "entity_000048",
+      "to": "entity_000003",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "PlayStation's popularity in China was helped by the PlayStation 5."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000046",
+      "type": "impacts",
+      "from_": "entity_000054",
+      "to": "entity_000048",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Sony implemented a price reduction strategy for the PlayStation 5 in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000047",
+      "type": "operates_in",
+      "from_": "entity_000048",
+      "to": "entity_000014",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "PlayStation's accessibility improved in India due to a stabilized supply situation."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000048",
+      "type": "launches_in",
+      "from_": "entity_000054",
+      "to": "entity_000014",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Sony launched the PlayStation 5 Slim in India in April 2024."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000049",
+      "type": "part_of",
+      "from_": "entity_000056",
+      "to": "entity_000055",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Construction is one of the two biggest categories in traditional toys and games in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000050",
+      "type": "part_of",
+      "from_": "entity_000035",
+      "to": "entity_000055",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Dolls and accessories is one of the two biggest categories in traditional toys and games in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000051",
+      "type": "part_of",
+      "from_": "entity_000060",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Mobile games is the biggest category in video games in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000052",
+      "type": "provides_opportunities_for",
+      "from_": "entity_000061",
+      "to": "entity_000060",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Cross-platform games are expected to provide additional sales opportunities for mobile games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000107",
+            "type": "provides_opportunities_for",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000053",
+      "type": "related_to",
+      "from_": "entity_000060",
+      "to": "entity_000062",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Mobile games are expanding into computer games through cross-platform strategies."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000054",
+      "type": "related_to",
+      "from_": "entity_000060",
+      "to": "entity_000063",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Mobile games are expanding into console games through cross-platform strategies."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000055",
+      "type": "impacts",
+      "from_": "entity_000064",
+      "to": "entity_000060",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Subscription models are poised to integrate gaming resources across various platforms for mobile games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000056",
+      "type": "part_of",
+      "from_": "entity_000024",
+      "to": "entity_000023",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Trading card games are a subcategory of games and puzzles."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000084",
+            "type": "part_of",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000057",
+      "type": "codevelops_with",
+      "from_": "entity_000052",
+      "to": "entity_000065",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Pokémon and DeNA are jointly developing the Pokémon Trading Card Game Pocket mobile app."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000058",
+      "type": "impacts",
+      "from_": "entity_000066",
+      "to": "entity_000052",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The Pokémon Trading Card Game Pocket mobile app is expected to extend the boom of Pokémon cards."
+      },
+      "metadata": {
+        "confidence": 0.9,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000059",
+      "type": "developed_by",
+      "from_": "entity_000067",
+      "to": "entity_000049",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Nintendo's next-gen console will follow the Nintendo Switch."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000060",
+      "type": "drives",
+      "from_": "entity_000069",
+      "to": "entity_000068",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "New character developments are a factor for growth in the toys and games market in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000061",
+      "type": "drives",
+      "from_": "entity_000070",
+      "to": "entity_000068",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "AI advances are a factor for growth in the toys and games market in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000112",
+            "type": "drives",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000062",
+      "type": "drives",
+      "from_": "entity_000071",
+      "to": "entity_000068",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The kidult trend is a factor for growth in the toys and games market in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000113",
+            "type": "drives",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000063",
+      "type": "drives",
+      "from_": "entity_000072",
+      "to": "entity_000068",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Edu-tech innovations are a factor for growth in the toys and games market in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000114",
+            "type": "drives",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000064",
+      "type": "targets",
+      "from_": "entity_000073",
+      "to": "entity_000074",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "AI-enhanced toys cater to the preferences of children."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000065",
+      "type": "targets",
+      "from_": "entity_000073",
+      "to": "entity_000075",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "AI-enhanced toys cater to the preferences of adults."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000066",
+      "type": "targets",
+      "from_": "entity_000073",
+      "to": "entity_000076",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "AI-enhanced toys have the potential to serve as companions for older people."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000067",
+      "type": "strategy_is",
+      "from_": "entity_000077",
+      "to": "entity_000078",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "South Korean companies are targeting global expansion in the video games industry."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000068",
+      "type": "targets",
+      "from_": "entity_000077",
+      "to": "entity_000079",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "South Korean companies are creating games tailored for international audiences."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000069",
+      "type": "targets",
+      "from_": "entity_000077",
+      "to": "entity_000080",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "South Korean companies are seeking success in North American markets."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000115",
+            "type": "targets",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000070",
+      "type": "targets",
+      "from_": "entity_000077",
+      "to": "entity_000081",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "South Korean companies are seeking success in European markets."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000116",
+            "type": "targets",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000071",
+      "type": "impacts",
+      "from_": "entity_000082",
+      "to": "entity_000083",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The push for greater disclosure of probability-based items affects video games operators in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:07:50Z"
+      }
+    },
+    {
+      "id": "rel_000072",
+      "type": "part_of",
+      "from_": "entity_000000",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in Japan is part of the broader Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000073",
+      "type": "part_of",
+      "from_": "entity_000068",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in South Korea is part of the broader Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000074",
+      "type": "part_of",
+      "from_": "entity_000084",
+      "to": "entity_000000",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games in China is part of the broader Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000075",
+      "type": "impacts",
+      "from_": "entity_000082",
+      "to": "entity_000084",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The resurgence of COVID-19 cases and subsequent lockdowns in China negatively impacted the country's toys and games market in 2022."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000078",
+      "type": "drives",
+      "from_": "entity_000015",
+      "to": "entity_000016",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The increasing popularity of e-sports is driving growth and uptake in the mobile gaming category in India."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000079",
+      "type": "drives",
+      "from_": "entity_000017",
+      "to": "entity_000060",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Rising smartphone penetration is a key driver for the growth of the video games market in India."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000080",
+      "type": "drives",
+      "from_": "entity_000018",
+      "to": "entity_000060",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The availability of cheap smartphones and data plans helps to boost demand and drive growth in the Indian video games market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000081",
+      "type": "part_of",
+      "from_": "entity_000019",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Video games software is a sub-category of the broader video games market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000122",
+            "type": "part_of",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000082",
+      "type": "part_of",
+      "from_": "entity_000016",
+      "to": "entity_000019",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Mobile gaming is the largest sub-category within the video games software market in Asia Pacific."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000083",
+      "type": "impacts",
+      "from_": "entity_000061",
+      "to": "entity_000016",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The trend of cross-platform games creates new opportunities and positively impacts the mobile games category."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000085",
+      "type": "part_of",
+      "from_": "entity_000030",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Baby and infant toys are a category within the broader traditional toys and games market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000086",
+      "type": "operates_in",
+      "from_": "entity_000031",
+      "to": "entity_000084",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The company NetEase operates within the toys and games market in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000087",
+      "type": "operates_in",
+      "from_": "entity_000033",
+      "to": "entity_000084",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The company miHoYo operates within the toys and games market in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000088",
+      "type": "operates_in",
+      "from_": "entity_000065",
+      "to": "entity_000001",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The retailer Edion operates within the Japanese market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000089",
+      "type": "operates_in",
+      "from_": "entity_000042",
+      "to": "entity_000084",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The company Tencent is a major player in the toys and games market in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000090",
+      "type": "operates_in",
+      "from_": "entity_000038",
+      "to": "entity_000084",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The company LEGO is a major player in the toys and games market in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000094",
+      "type": "drives",
+      "from_": "entity_000008",
+      "to": "entity_000084",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The growing consumer trend of preferring toys with cultural identity is driving growth and change within the toys and games market in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000095",
+      "type": "owns",
+      "from_": "entity_000054",
+      "to": "entity_000048",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Sony is the parent company of the PlayStation brand."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000096",
+      "type": "is_a",
+      "from_": "entity_000048",
+      "to": "entity_000048",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": [
+          "PlayStation 5 is a product within the PlayStation brand lineup.",
+          "PlayStation 5 Slim is a newer model of the PlayStation 5."
+        ]
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000097",
+            "type": "is_a",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000100",
+      "type": "competes_with",
+      "from_": "entity_000049",
+      "to": "entity_000038",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Nintendo and Lego are the top two brands in the Asia Pacific toys and games market, making them competitors."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000101",
+      "type": "operates_in",
+      "from_": "entity_000048",
+      "to": "entity_000001",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "PlayStation is a major brand operating in the Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000102",
+      "type": "operates_in",
+      "from_": "entity_000049",
+      "to": "entity_000001",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Nintendo is one of the top brands operating in the Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000103",
+      "type": "operates_in",
+      "from_": "entity_000038",
+      "to": "entity_000001",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Lego is one of the top brands operating in the Asia Pacific market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000104",
+      "type": "location_of",
+      "from_": "entity_000055",
+      "to": "entity_000003",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The toys and games market in China is geographically located in China."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000105",
+      "type": "drives",
+      "from_": "entity_000056",
+      "to": "entity_000055",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Construction is a key category driving growth within the Chinese traditional toys and games market."
+      },
+      "metadata": {
+        "confidence": 0.9,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000106",
+      "type": "drives",
+      "from_": "entity_000035",
+      "to": "entity_000055",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Dolls and accessories is a key category driving growth within the Chinese traditional toys and games market."
+      },
+      "metadata": {
+        "confidence": 0.9,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000108",
+      "type": "codevelops_with",
+      "from_": "entity_000052",
+      "to": "entity_000066",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Pokémon and DeNA are jointly developing the Pokémon Trading Card Game Pocket mobile app."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000109",
+      "type": "codevelops_with",
+      "from_": "entity_000065",
+      "to": "entity_000066",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "DeNA and Pokémon are jointly developing the Pokémon Trading Card Game Pocket mobile app."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000110",
+      "type": "related_to",
+      "from_": "entity_000067",
+      "to": "entity_000049",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Nintendo's next-generation console will be the successor to the highly successful Nintendo Switch."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000111",
+      "type": "location_of",
+      "from_": "entity_000068",
+      "to": "entity_000002",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The toys and games market in South Korea is geographically located in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000117",
+      "type": "impacts",
+      "from_": "entity_000082",
+      "to": "entity_000013",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The disclosure regulation for probability-based items impacts the video games industry in South Korea."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000118",
+      "type": "part_of",
+      "from_": "entity_000005",
+      "to": "entity_000030",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Traditional Toys and Games is a main category within the overall Toys and Games market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000119",
+      "type": "part_of",
+      "from_": "entity_000013",
+      "to": "entity_000030",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Video Games is a main category within the overall Toys and Games market."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000120",
+      "type": "part_of",
+      "from_": "entity_000056",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Construction is a subcategory of Traditional Toys and Games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000121",
+      "type": "part_of",
+      "from_": "entity_000035",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Dolls and Accessories is a subcategory of Traditional Toys and Games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000128",
+            "type": "part_of",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          },
+          {
+            "relationship_id": "rel_000130",
+            "type": "part_of",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000123",
+      "type": "part_of",
+      "from_": "entity_000063",
+      "to": "entity_000019",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Static Consoles is a subcategory of Video Games Hardware."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z",
+        "merged_from": [
+          {
+            "relationship_id": "rel_000131",
+            "type": "part_of",
+            "merge_reason": "duplicate",
+            "timestamp": "2026-01-23T11:11:33Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rel_000124",
+      "type": "part_of",
+      "from_": "entity_000054",
+      "to": "entity_000019",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Digital is a subcategory of Video Games Software."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000125",
+      "type": "part_of",
+      "from_": "entity_000060",
+      "to": "entity_000054",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Mobile Games is a subcategory of Digital video game software."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000126",
+      "type": "part_of",
+      "from_": "entity_000016",
+      "to": "entity_000054",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Online Games and Subscriptions is a subcategory of Digital video game software."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000127",
+      "type": "part_of",
+      "from_": "entity_000023",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Games and Puzzles is a subcategory of Traditional Toys and Games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000129",
+      "type": "part_of",
+      "from_": "entity_000005",
+      "to": "entity_000005",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Arts and Crafts is a subcategory of Traditional Toys and Games."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000132",
+      "type": "part_of",
+      "from_": "entity_000062",
+      "to": "entity_000019",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "Computer Games are a type of video game software."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    },
+    {
+      "id": "rel_000133",
+      "type": "location_of",
+      "from_": "entity_000030",
+      "to": "entity_000014",
+      "properties": {
+        "source_urls": "Toys_and_Games_in_Asia_Pacific.txt",
+        "description": "The market for toys and games is located in India, as per the ontology hints and document context."
+      },
+      "metadata": {
+        "confidence": 1.0,
+        "timestamp": "2026-01-23T11:10:39Z"
+      }
+    }
+  ]
+}

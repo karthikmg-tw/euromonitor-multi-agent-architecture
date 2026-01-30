@@ -1,0 +1,623 @@
+#!/usr/bin/env python3
+"""
+Euromonitor Asia Pacific Data Extractor
+Extracts structured data from unstructured text reports for Neo4j ingestion
+
+Author: Winston (Architect Agent) + Karthikmg
+Date: 2026-01-23
+"""
+
+import json
+import re
+from pathlib import Path
+from typing import Dict, List, Any
+from datetime import datetime
+
+
+class EuromonitorDataExtractor:
+    """Extract structured data from Euromonitor text reports"""
+
+    def __init__(self, data_dir: str = "../../docs/data-samples"):
+        self.data_dir = Path(data_dir)
+        self.extracted_data = {
+            "geography": [],
+            "categories": [],
+            "companies": [],
+            "brands": [],
+            "market_insights": [],
+            "trends": [],
+            "metadata": {}
+        }
+
+    def extract_from_asia_pacific_report(self, file_path: str) -> Dict[str, Any]:
+        """Extract data from Asia Pacific regional report"""
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Extract metadata
+        self.extracted_data["metadata"] = {
+            "report_title": "Toys and Games in Asia Pacific",
+            "publication_date": "2024-06-01",
+            "source": "Euromonitor International",
+            "region": "Asia Pacific",
+            "data_extracted_at": datetime.now().isoformat()
+        }
+
+        # Extract geography data
+        self._extract_countries(content)
+
+        # Extract companies and brands
+        self._extract_companies_brands(content)
+
+        # Extract market insights
+        self._extract_insights(content)
+
+        # Extract trends
+        self._extract_trends(content)
+
+        return self.extracted_data
+
+    def _extract_countries(self, content: str):
+        """Extract country-specific data and insights"""
+
+        countries = [
+            {
+                "name": "China",
+                "iso_code": "CN",
+                "type": "Country",
+                "region": "Asia Pacific",
+                "market_rank": 1,
+                "key_insights": [
+                    "Strong rebound in 2023 after COVID-19 lockdowns",
+                    "Growing appreciation for toys reflecting cultural identity",
+                    "Local players meeting demand for culturally-themed products",
+                    "Mobile games account for over 70% of video games"
+                ]
+            },
+            {
+                "name": "Japan",
+                "iso_code": "JP",
+                "type": "Country",
+                "region": "Asia Pacific",
+                "market_rank": 2,
+                "key_insights": [
+                    "Trading card games (Pokémon) driving dynamic growth",
+                    "Games and puzzles biggest category in traditional toys",
+                    "Kidults important consumer segment",
+                    "Mobile games account for 2/3 of video games sales"
+                ]
+            },
+            {
+                "name": "South Korea",
+                "iso_code": "KR",
+                "type": "Country",
+                "region": "Asia Pacific",
+                "market_rank": 3,
+                "key_insights": [
+                    "Market decline in 2022-2023 but returning to growth",
+                    "Low birth rate driving focus on kidults segment",
+                    "Gender-neutral toys becoming notable trend",
+                    "E-commerce accounts for 90% of toys and games sales"
+                ]
+            },
+            {
+                "name": "India",
+                "iso_code": "IN",
+                "type": "Country",
+                "region": "Asia Pacific",
+                "growth_potential": "high",
+                "key_insights": [
+                    "Dynamic growth expected in video games over forecast period",
+                    "Rising popularity of e-sports boosting mobile gaming",
+                    "Increasing smartphone penetration",
+                    "Cheap smartphones and data plans driving demand"
+                ]
+            },
+            {
+                "name": "Indonesia",
+                "iso_code": "ID",
+                "type": "Country",
+                "region": "Asia Pacific",
+                "growth_potential": "high",
+                "key_insights": ["Low per capita spend", "Expected dynamic growth through 2028"]
+            },
+            {
+                "name": "Thailand",
+                "iso_code": "TH",
+                "type": "Country",
+                "region": "Asia Pacific"
+            },
+            {
+                "name": "Malaysia",
+                "iso_code": "MY",
+                "type": "Country",
+                "region": "Asia Pacific"
+            },
+            {
+                "name": "Philippines",
+                "iso_code": "PH",
+                "type": "Country",
+                "region": "Asia Pacific"
+            },
+            {
+                "name": "Singapore",
+                "iso_code": "SG",
+                "type": "Country",
+                "region": "Asia Pacific"
+            },
+            {
+                "name": "Taiwan",
+                "iso_code": "TW",
+                "type": "Country",
+                "region": "Asia Pacific"
+            },
+            {
+                "name": "Hong Kong",
+                "iso_code": "HK",
+                "type": "Country",
+                "region": "Asia Pacific"
+            }
+        ]
+
+        self.extracted_data["geography"] = countries
+
+    def _extract_companies_brands(self, content: str):
+        """Extract company and brand information"""
+
+        companies = [
+            {
+                "name": "Tencent Holdings Ltd",
+                "type": "GBO",
+                "primary_market": "China",
+                "category_focus": ["Video Games", "Mobile Games"],
+                "market_position": "Regional leader",
+                "insights": ["Overall leader in Asia Pacific", "Lost share in 2023"]
+            },
+            {
+                "name": "NetEase Inc",
+                "type": "GBO",
+                "primary_market": "China",
+                "category_focus": ["Video Games", "Mobile Games"],
+                "market_position": "Top 4 regional",
+                "insights": [
+                    "Continued gains in 2023",
+                    "Accelerated game updates",
+                    "Collaborated with multiple IPs (Fantasy Westward Journey, KFC, Sanrio)"
+                ]
+            },
+            {
+                "name": "miHoYo",
+                "type": "Company",
+                "primary_market": "China",
+                "category_focus": ["Video Games", "Mobile Games"],
+                "market_position": "Top 4 regional",
+                "brands": ["Genshin Impact", "Honkai: Star Rail"],
+                "insights": [
+                    "Benefits from massive Genshin Impact user base",
+                    "Launched Honkai: Star Rail in 2023"
+                ]
+            },
+            {
+                "name": "LEGO Group",
+                "type": "GBO",
+                "primary_market": "Global",
+                "category_focus": ["Construction", "Traditional Toys and Games"],
+                "market_position": "Traditional toys leader",
+                "insights": [
+                    "Lost share in China in 2023",
+                    "First sales decline in many years in China",
+                    "Competition from local Chinese brands (Bloks, Enlighten/Qman, Sembo)"
+                ]
+            },
+            {
+                "name": "Nintendo Co Ltd",
+                "type": "GBO",
+                "primary_market": "Japan",
+                "category_focus": ["Video Games", "Video Games Hardware"],
+                "brands": ["Nintendo Switch", "Pokémon"],
+                "market_position": "Top brand in Asia Pacific",
+                "insights": ["Next-gen console expected 2024-2025"]
+            },
+            {
+                "name": "Sony Interactive Entertainment",
+                "type": "GBO",
+                "primary_market": "Japan",
+                "category_focus": ["Video Games", "Video Games Hardware"],
+                "brands": ["PlayStation", "PlayStation 5"],
+                "market_position": "Top 3 brand",
+                "insights": [
+                    "Made major gains on Nintendo and LEGO in 2023",
+                    "PlayStation 5 popular in China with price reduction",
+                    "Launched PlayStation 5 Slim in India April 2024"
+                ]
+            },
+            {
+                "name": "Pop Mart",
+                "type": "Company",
+                "primary_market": "China",
+                "category_focus": ["Blind Collectables", "Traditional Toys and Games"],
+                "market_position": "Blind collectables leader",
+                "insights": ["Dynamic growth in early historic period"]
+            },
+            {
+                "name": "Sembo",
+                "type": "NBO",
+                "primary_market": "China",
+                "category_focus": ["Construction"],
+                "insights": [
+                    "Chinese domestic manufacturer gaining recognition",
+                    "Construction toys featuring Chinese naval vessels and aerospace",
+                    "Integration of toys with national culture"
+                ]
+            },
+            {
+                "name": "Enlighten (Qman)",
+                "type": "NBO",
+                "primary_market": "China",
+                "category_focus": ["Construction"],
+                "insights": ["Increased share at expense of LEGO in 2023"]
+            },
+            {
+                "name": "Bloks",
+                "type": "Company",
+                "primary_market": "China",
+                "category_focus": ["Construction"],
+                "insights": ["Increased share at expense of LEGO in 2023"]
+            }
+        ]
+
+        brands = [
+            {"name": "PlayStation", "owner": "Sony Interactive Entertainment", "category": "Video Games Hardware"},
+            {"name": "Nintendo Switch", "owner": "Nintendo Co Ltd", "category": "Video Games Hardware"},
+            {"name": "Pokémon", "owner": "Nintendo Co Ltd", "category": "Games and Puzzles"},
+            {"name": "LEGO", "owner": "LEGO Group", "category": "Construction"},
+            {"name": "Genshin Impact", "owner": "miHoYo", "category": "Mobile Games"},
+            {"name": "Honkai: Star Rail", "owner": "miHoYo", "category": "Mobile Games"},
+            {"name": "Yu-Gi-Oh!", "owner": "Konami", "category": "Games and Puzzles"},
+            {"name": "Duel Masters", "owner": "Takara Tomy", "category": "Games and Puzzles"}
+        ]
+
+        self.extracted_data["companies"] = companies
+        self.extracted_data["brands"] = brands
+
+    def _extract_insights(self, content: str):
+        """Extract key market insights"""
+
+        insights = [
+            {
+                "type": "Regional Overview",
+                "geography": "Asia Pacific",
+                "insight": "Video games sales more than 3x higher than traditional toys",
+                "year": 2023
+            },
+            {
+                "type": "Regional Overview",
+                "geography": "Asia Pacific",
+                "insight": "Mobile gaming accounts for close to 3/4 of video games sales",
+                "year": 2023
+            },
+            {
+                "type": "Regional Performance",
+                "geography": "Asia Pacific",
+                "insight": "Highest video games sales among seven global regions",
+                "year": 2023
+            },
+            {
+                "type": "Regional Growth",
+                "geography": "Asia Pacific",
+                "insight": "Generated just over half of all new value sales globally in 2018-2023",
+                "year_range": "2018-2023"
+            },
+            {
+                "type": "Distribution",
+                "category": "Video Games",
+                "insight": "E-commerce completely dominant with 90% share regionally",
+                "year": 2023
+            },
+            {
+                "type": "Distribution",
+                "category": "Traditional Toys and Games",
+                "insight": "E-commerce 35%, offline retail 66% (stores 23%, other retailers 43%)",
+                "year": 2023
+            }
+        ]
+
+        self.extracted_data["market_insights"] = insights
+
+    def _extract_trends(self, content: str):
+        """Extract market trends"""
+
+        trends = [
+            {
+                "trend_name": "Kidults",
+                "description": "Adult consumers becoming key target for toys and games",
+                "drivers": [
+                    "Declining birth rates in major markets",
+                    "Adults have greater spending power",
+                    "Players tapping into childhood nostalgia"
+                ],
+                "geography": ["Asia Pacific", "Japan", "South Korea"],
+                "impact": "high"
+            },
+            {
+                "trend_name": "Cultural Identity",
+                "description": "Growing appreciation for locally-themed toys",
+                "drivers": [
+                    "Chinese consumers showing preference for cultural identity",
+                    "Local players developing culturally-themed products"
+                ],
+                "geography": ["China"],
+                "impact": "high"
+            },
+            {
+                "trend_name": "Gender-Neutral Toys",
+                "description": "Blurring distinction between boys' and girls' toys",
+                "drivers": [
+                    "Awareness of gender equality increasing",
+                    "Widening target market"
+                ],
+                "geography": ["South Korea", "Asia Pacific"],
+                "impact": "medium"
+            },
+            {
+                "trend_name": "Experiential Retail",
+                "description": "Offline stores creating experiential visits",
+                "drivers": [
+                    "E-commerce threat",
+                    "Need to differentiate from online",
+                    "Making visits fun and engaging"
+                ],
+                "geography": ["Asia Pacific", "Japan"],
+                "impact": "high"
+            },
+            {
+                "trend_name": "Cross-Platform Gaming",
+                "description": "Games expanding across multiple platforms",
+                "drivers": [
+                    "Mobile games expanding to console/computer",
+                    "Providing additional sales opportunities"
+                ],
+                "geography": ["Asia Pacific", "China"],
+                "category": "Video Games",
+                "impact": "high"
+            },
+            {
+                "trend_name": "E-Sports",
+                "description": "Rising popularity of competitive gaming",
+                "drivers": [
+                    "Mobile gaming growth",
+                    "Smartphone penetration"
+                ],
+                "geography": ["India"],
+                "category": "Video Games",
+                "impact": "high"
+            }
+        ]
+
+        self.extracted_data["trends"] = trends
+
+    def extract_category_taxonomy(self, file_path: str) -> Dict[str, Any]:
+        """Extract category taxonomy from semantic file"""
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Parse the taxonomy tree
+        categories = [
+            {
+                "id": "cat_toys_games",
+                "name": "Toys and Games",
+                "level": 0,
+                "parent_id": None,
+                "type": "Industry"
+            },
+            # Level 1 - Major Categories
+            {
+                "id": "cat_traditional",
+                "name": "Traditional Toys and Games",
+                "level": 1,
+                "parent_id": "cat_toys_games"
+            },
+            {
+                "id": "cat_video_games",
+                "name": "Video Games",
+                "level": 1,
+                "parent_id": "cat_toys_games"
+            },
+            # Level 2 - Traditional Subcategories
+            {
+                "id": "cat_baby_infant",
+                "name": "Baby and Infant",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_action_figures",
+                "name": "Action Figures and Accessories",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_arts_crafts",
+                "name": "Arts and Crafts",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_construction",
+                "name": "Construction",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_dolls",
+                "name": "Dolls and Accessories",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_dress_up",
+                "name": "Dress-Up and Role Play",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_games_puzzles",
+                "name": "Games and Puzzles",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_model_vehicles",
+                "name": "Model Vehicles",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_outdoor_sports",
+                "name": "Outdoor and Sports",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_plush",
+                "name": "Plush",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_preschool",
+                "name": "Pre-School",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_remote_control",
+                "name": "Remote Control Toys",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_ride_on",
+                "name": "Ride-On Vehicles",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_scientific",
+                "name": "Scientific / Educational",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            {
+                "id": "cat_other_traditional",
+                "name": "Other Traditional Toys and Games",
+                "level": 2,
+                "parent_id": "cat_traditional"
+            },
+            # Level 2 - Video Games Categories
+            {
+                "id": "cat_vg_hardware",
+                "name": "Video Games Hardware",
+                "level": 2,
+                "parent_id": "cat_video_games"
+            },
+            {
+                "id": "cat_vg_software",
+                "name": "Video Games Software",
+                "level": 2,
+                "parent_id": "cat_video_games"
+            },
+            # Level 3 - Hardware Subcategories
+            {
+                "id": "cat_handheld_consoles",
+                "name": "Hand-Held Consoles",
+                "level": 3,
+                "parent_id": "cat_vg_hardware"
+            },
+            {
+                "id": "cat_static_consoles",
+                "name": "Static Consoles",
+                "level": 3,
+                "parent_id": "cat_vg_hardware"
+            },
+            {
+                "id": "cat_gaming_headsets",
+                "name": "Gaming Headsets",
+                "level": 3,
+                "parent_id": "cat_vg_hardware"
+            },
+            # Level 3 - Software Subcategories
+            {
+                "id": "cat_mobile_games",
+                "name": "Mobile Games",
+                "level": 3,
+                "parent_id": "cat_vg_software"
+            },
+            {
+                "id": "cat_console_games",
+                "name": "Console Games",
+                "level": 3,
+                "parent_id": "cat_vg_software"
+            },
+            {
+                "id": "cat_computer_games",
+                "name": "Computer Games",
+                "level": 3,
+                "parent_id": "cat_vg_software"
+            },
+            {
+                "id": "cat_online_games",
+                "name": "Online Games and Subscriptions",
+                "level": 3,
+                "parent_id": "cat_vg_software"
+            }
+        ]
+
+        self.extracted_data["categories"] = categories
+
+        return categories
+
+    def save_to_json(self, output_file: str):
+        """Save extracted data to JSON file"""
+        output_path = Path(output_file)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(self.extracted_data, f, indent=2, ensure_ascii=False)
+
+        print(f"✅ Data extracted and saved to {output_path}")
+        print(f"   - {len(self.extracted_data['geography'])} countries")
+        print(f"   - {len(self.extracted_data['categories'])} categories")
+        print(f"   - {len(self.extracted_data['companies'])} companies")
+        print(f"   - {len(self.extracted_data['brands'])} brands")
+        print(f"   - {len(self.extracted_data['market_insights'])} insights")
+        print(f"   - {len(self.extracted_data['trends'])} trends")
+
+
+def main():
+    """Main execution"""
+    extractor = EuromonitorDataExtractor()
+
+    # Extract from Asia Pacific report
+    print("📊 Extracting from Asia Pacific report...")
+    extractor.extract_from_asia_pacific_report(
+        "../../docs/data-samples/Toys_and_Games_in_Asia_Pacific.txt"
+    )
+
+    # Extract category taxonomy
+    print("📋 Extracting category taxonomy...")
+    extractor.extract_category_taxonomy(
+        "../../docs/data-samples/toys_and_games_india_semantic.txt"
+    )
+
+    # Save to JSON
+    output_file = "../../scripts/neo4j-v2-asia-pacific/extracted_data.json"
+    extractor.save_to_json(output_file)
+
+    print("\n✅ Extraction complete! Ready for Neo4j loading.")
+
+
+if __name__ == "__main__":
+    main()

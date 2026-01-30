@@ -1,0 +1,7 @@
+{
+  "query": "kidults",
+  "top_k": 5,
+  "include_relationships": true,
+  "min_similarity": 0.0,
+  "debug": true
+}

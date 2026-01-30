@@ -1,0 +1,1904 @@
+@prefix : <http://example.org/ontology/market_research/#> .
+@prefix entity: <http://example.org/ontology/market_research/entity#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> a owl:Ontology ;
+    rdfs:label "Market Research Ontology" ;
+    :extractedAt "2026-01-23T11:11:40.979599+00:00"^^xsd:dateTime ;
+    owl:versionInfo "1.0.2" .
+
+:depends_on a owl:ObjectProperty ;
+    rdfs:label "depends_on" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+:develops a owl:ObjectProperty ;
+    rdfs:label "develops" ;
+    rdfs:domain :entity ;
+    rdfs:range :product .
+
+:event a owl:Class ;
+    rdfs:label "event" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:located_in a owl:ObjectProperty ;
+    rdfs:label "located_in" ;
+    rdfs:domain :market ;
+    rdfs:range :location .
+
+:requires a owl:ObjectProperty ;
+    rdfs:label "requires" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+:successor_to a owl:ObjectProperty ;
+    rdfs:label "successor_to" ;
+    rdfs:domain :product ;
+    rdfs:range :brand .
+
+entity:construction_toys a :category ;
+    rdfs:label "construction toys" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A category within traditional toys and games where competition intensified in China." .
+
+entity:kidult_users a :consumer_segment ;
+    rdfs:label "kidult users" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Adults who buy and play with toys, including traditional toys and games." .
+
+entity:licensed_traditional_toys_and_games a :trend ;
+    rdfs:label "licensed traditional toys and games" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The trend of toys and games being licensed based on popular media franchises." .
+
+entity:traditional_toys_and_games_stores a :distribution_channel ;
+    rdfs:label "traditional toys and games stores" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "An important retail channel for traditional toys and games in Asia Pacific." .
+
+entity:trendy_and_collectible_toys a :trend ;
+    rdfs:label "trendy and collectible toys" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The trend of toys that are fashionable and designed to be collected." .
+
+<rel:rel_000000> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:japan .
+
+<rel:rel_000001> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:south_korea .
+
+<rel:rel_000002> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:china .
+
+<rel:rel_000003> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:india .
+
+<rel:rel_000004> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:indonesia .
+
+<rel:rel_000005> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:kidults ;
+    rdf:predicate :targets ;
+    rdf:subject entity:traditional_toys_and_games .
+
+<rel:rel_000006> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_reflecting_chinese_cultural_identity ;
+    rdf:predicate :prefers ;
+    rdf:subject entity:chinese_consumers .
+
+<rel:rel_000007> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:declining_birth_rates .
+
+<rel:rel_000008> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:offline_retail ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:ecommerce .
+
+<rel:rel_000009> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:experiential_visits ;
+    rdf:predicate :offers ;
+    rdf:subject entity:offline_retail .
+
+<rel:rel_000010> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_gaming ;
+    rdf:predicate :supports ;
+    rdf:subject entity:esports .
+
+<rel:rel_000011> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :drives ;
+    rdf:subject entity:rising_smartphone_penetration .
+
+<rel:rel_000012> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :drives ;
+    rdf:subject entity:availability_of_cheap_smartphonesdata_plans .
+
+<rel:rel_000013> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games_software ;
+    rdf:predicate :subcategory_of ;
+    rdf:subject entity:mobile_gaming .
+
+<rel:rel_000014> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :subcategory_of ;
+    rdf:subject entity:video_games_software .
+
+<rel:rel_000015> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:north_america ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:toys_and_games_in_asia_pacific .
+
+<rel:rel_000016> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:western_europe ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:toys_and_games_in_asia_pacific .
+
+<rel:rel_000017> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :drives_growth_in ;
+    rdf:subject entity:games_and_puzzles .
+
+<rel:rel_000018> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:games_and_puzzles ;
+    rdf:predicate :subcategory_of ;
+    rdf:subject entity:trading_card_games .
+
+<rel:rel_000019> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_card_games ;
+    rdf:predicate :is_a ;
+    rdf:subject entity:pok_mon_cards .
+
+<rel:rel_000020> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_card_games ;
+    rdf:predicate :is_a ;
+    rdf:subject entity:yugioh .
+
+<rel:rel_000021> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_card_games ;
+    rdf:predicate :is_a ;
+    rdf:subject entity:duel_masters .
+
+<rel:rel_000022> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_card_games ;
+    rdf:predicate :is_a ;
+    rdf:subject entity:wei_schwarz .
+
+<rel:rel_000023> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_card_games ;
+    rdf:predicate :is_a ;
+    rdf:subject entity:one_piece_card_game .
+
+<rel:rel_000024> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:baby_and_infant_toys ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:declining_birth_rates .
+
+<rel:rel_000025> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:justice_online ;
+    rdf:predicate :owns ;
+    rdf:subject entity:netease .
+
+<rel:rel_000026> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:honkai_star_rail ;
+    rdf:predicate :owns ;
+    rdf:subject entity:mihoyo .
+
+<rel:rel_000027> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:dolls_and_accessories ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:popochan .
+
+<rel:rel_000028> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:genderneutral_toys ;
+    rdf:predicate :drives ;
+    rdf:subject entity:increasing_awareness_of_gender_equality .
+
+<rel:rel_000029> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:douyin ;
+    rdf:predicate :drives_growth_on ;
+    rdf:subject entity:live_streaming_ecommerce .
+
+<rel:rel_000030> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:tencent .
+
+<rel:rel_000031> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:lego .
+
+<rel:rel_000032> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:lego ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:bloks .
+
+<rel:rel_000033> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:lego ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:enlighten_qman .
+
+<rel:rel_000034> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:lego ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:sembo .
+
+<rel:rel_000035> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:genshin_impact ;
+    rdf:predicate :owns ;
+    rdf:subject entity:mihoyo .
+
+<rel:rel_000036> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:nintendo ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000037> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:lego ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000038> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:blind_collectables_craze ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:pop_mart .
+
+<rel:rel_000039> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_cards ;
+    rdf:predicate :related_to ;
+    rdf:subject entity:pok_mon .
+
+<rel:rel_000040> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_cards ;
+    rdf:predicate :related_to ;
+    rdf:subject entity:duel_masters .
+
+<rel:rel_000041> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:trading_cards ;
+    rdf:predicate :related_to ;
+    rdf:subject entity:yugioh .
+
+<rel:rel_000042> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:nintendo .
+
+<rel:rel_000043> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:lego .
+
+<rel:rel_000044> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000045> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:china ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000046> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:playstation ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:sony .
+
+<rel:rel_000047> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:india ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000048> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:india ;
+    rdf:predicate :launches_in ;
+    rdf:subject entity:sony .
+
+<rel:rel_000049> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:chinese_toys_and_games_market ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:construction .
+
+<rel:rel_000050> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:chinese_toys_and_games_market ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:dolls_and_accessories .
+
+<rel:rel_000051> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:mobile_games .
+
+<rel:rel_000052> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_games ;
+    rdf:predicate :provides_opportunities_for ;
+    rdf:subject entity:crossplatform_games .
+
+<rel:rel_000053> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:computer_games ;
+    rdf:predicate :related_to ;
+    rdf:subject entity:mobile_games .
+
+<rel:rel_000054> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:console_games ;
+    rdf:predicate :related_to ;
+    rdf:subject entity:mobile_games .
+
+<rel:rel_000055> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_games ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:subscriptions .
+
+<rel:rel_000056> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:games_and_puzzles ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:trading_card_games .
+
+<rel:rel_000057> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:dena ;
+    rdf:predicate :codevelops_with ;
+    rdf:subject entity:pok_mon .
+
+<rel:rel_000058> a rdf:Statement ;
+    :confidence 9e-01 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:pok_mon ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:pok_mon_trading_card_game_pocket_mobile_app .
+
+<rel:rel_000059> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:nintendo ;
+    rdf:predicate :developed_by ;
+    rdf:subject entity:nintendos_nextgen_console .
+
+<rel:rel_000060> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_market_in_south_korea ;
+    rdf:predicate :drives ;
+    rdf:subject entity:new_character_developments .
+
+<rel:rel_000061> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_market_in_south_korea ;
+    rdf:predicate :drives ;
+    rdf:subject entity:ai_advances .
+
+<rel:rel_000062> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_market_in_south_korea ;
+    rdf:predicate :drives ;
+    rdf:subject entity:kidult_trend .
+
+<rel:rel_000063> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_market_in_south_korea ;
+    rdf:predicate :drives ;
+    rdf:subject entity:edutech_innovations .
+
+<rel:rel_000064> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:children ;
+    rdf:predicate :targets ;
+    rdf:subject entity:aienhanced_toys .
+
+<rel:rel_000065> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:adults ;
+    rdf:predicate :targets ;
+    rdf:subject entity:aienhanced_toys .
+
+<rel:rel_000066> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:older_people ;
+    rdf:predicate :targets ;
+    rdf:subject entity:aienhanced_toys .
+
+<rel:rel_000067> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:global_expansion ;
+    rdf:predicate :strategy_is ;
+    rdf:subject entity:south_korean_companies .
+
+<rel:rel_000068> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:international_audiences ;
+    rdf:predicate :targets ;
+    rdf:subject entity:south_korean_companies .
+
+<rel:rel_000069> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:north_american_markets ;
+    rdf:predicate :targets ;
+    rdf:subject entity:south_korean_companies .
+
+<rel:rel_000070> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:european_markets ;
+    rdf:predicate :targets ;
+    rdf:subject entity:south_korean_companies .
+
+<rel:rel_000071> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games_operators ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:probabilitybased_items .
+
+<rel:rel_000072> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:toys_and_games_in_asia_pacific .
+
+<rel:rel_000073> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:toys_and_games_market_in_south_korea .
+
+<rel:rel_000074> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:toys_and_games_in_asia_pacific ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:euromonitor_international .
+
+<rel:rel_000075> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:euromonitor_international ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:probabilitybased_items .
+
+<rel:rel_000078> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_gaming ;
+    rdf:predicate :drives ;
+    rdf:subject entity:esports .
+
+<rel:rel_000079> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_games ;
+    rdf:predicate :drives ;
+    rdf:subject entity:rising_smartphone_penetration .
+
+<rel:rel_000080> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_games ;
+    rdf:predicate :drives ;
+    rdf:subject entity:availability_of_cheap_smartphonesdata_plans .
+
+<rel:rel_000081> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:video_games_software .
+
+<rel:rel_000082> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games_software ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:mobile_gaming .
+
+<rel:rel_000083> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:mobile_gaming ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:crossplatform_games .
+
+<rel:rel_000085> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:baby_and_infant_toys .
+
+<rel:rel_000086> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:euromonitor_international ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:netease .
+
+<rel:rel_000087> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:euromonitor_international ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:mihoyo .
+
+<rel:rel_000088> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:japan ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:dena .
+
+<rel:rel_000089> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:euromonitor_international ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:tencent .
+
+<rel:rel_000090> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:euromonitor_international ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:lego .
+
+<rel:rel_000094> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:euromonitor_international ;
+    rdf:predicate :drives ;
+    rdf:subject entity:toys_reflecting_chinese_cultural_identity .
+
+<rel:rel_000095> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:playstation ;
+    rdf:predicate :owns ;
+    rdf:subject entity:sony .
+
+<rel:rel_000096> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:playstation ;
+    rdf:predicate :is_a ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000100> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:lego ;
+    rdf:predicate :competes_with ;
+    rdf:subject entity:nintendo .
+
+<rel:rel_000101> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:japan ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:playstation .
+
+<rel:rel_000102> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:japan ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:nintendo .
+
+<rel:rel_000103> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:japan ;
+    rdf:predicate :operates_in ;
+    rdf:subject entity:lego .
+
+<rel:rel_000104> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:china ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:chinese_toys_and_games_market .
+
+<rel:rel_000105> a rdf:Statement ;
+    :confidence 9e-01 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:chinese_toys_and_games_market ;
+    rdf:predicate :drives ;
+    rdf:subject entity:construction .
+
+<rel:rel_000106> a rdf:Statement ;
+    :confidence 9e-01 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:chinese_toys_and_games_market ;
+    rdf:predicate :drives ;
+    rdf:subject entity:dolls_and_accessories .
+
+<rel:rel_000108> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:pok_mon_trading_card_game_pocket_mobile_app ;
+    rdf:predicate :codevelops_with ;
+    rdf:subject entity:pok_mon .
+
+<rel:rel_000109> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:pok_mon_trading_card_game_pocket_mobile_app ;
+    rdf:predicate :codevelops_with ;
+    rdf:subject entity:dena .
+
+<rel:rel_000110> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:nintendo ;
+    rdf:predicate :related_to ;
+    rdf:subject entity:nintendos_nextgen_console .
+
+<rel:rel_000111> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:south_korea ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:toys_and_games_market_in_south_korea .
+
+<rel:rel_000117> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games ;
+    rdf:predicate :impacts ;
+    rdf:subject entity:probabilitybased_items .
+
+<rel:rel_000118> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:baby_and_infant_toys ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:traditional_toys_and_games .
+
+<rel:rel_000119> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:baby_and_infant_toys ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:video_games .
+
+<rel:rel_000120> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:construction .
+
+<rel:rel_000121> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:dolls_and_accessories .
+
+<rel:rel_000123> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games_software ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:console_games .
+
+<rel:rel_000124> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games_software ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:sony .
+
+<rel:rel_000125> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:sony ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:mobile_games .
+
+<rel:rel_000126> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:sony ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:mobile_gaming .
+
+<rel:rel_000127> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:games_and_puzzles .
+
+<rel:rel_000129> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:traditional_toys_and_games ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:traditional_toys_and_games .
+
+<rel:rel_000132> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:video_games_software ;
+    rdf:predicate :part_of ;
+    rdf:subject entity:computer_games .
+
+<rel:rel_000133> a rdf:Statement ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:39+00:00"^^xsd:dateTime ;
+    rdf:object entity:india ;
+    rdf:predicate :location_of ;
+    rdf:subject entity:baby_and_infant_toys .
+
+:developed_by a owl:ObjectProperty ;
+    rdfs:label "developed_by" ;
+    rdfs:domain :product ;
+    rdfs:range :company .
+
+:drives_growth_in a owl:ObjectProperty ;
+    rdfs:label "drives_growth_in" ;
+    rdfs:domain :category ;
+    rdfs:range :category .
+
+:drives_growth_on a owl:ObjectProperty ;
+    rdfs:label "drives_growth_on" ;
+    rdfs:domain :trend ;
+    rdfs:range :distribution_channel .
+
+:launches_in a owl:ObjectProperty ;
+    rdfs:label "launches_in" ;
+    rdfs:domain :company ;
+    rdfs:range :location .
+
+:metric a owl:Class ;
+    rdfs:label "metric" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:offers a owl:ObjectProperty ;
+    rdfs:label "offers" ;
+    rdfs:domain :distribution_channel ;
+    rdfs:range :trend .
+
+:organization a owl:Class ;
+    rdfs:label "organization" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:prefers a owl:ObjectProperty ;
+    rdfs:label "prefers" ;
+    rdfs:domain :consumer_segment ;
+    rdfs:range :trend .
+
+:provides_opportunities_for a owl:ObjectProperty ;
+    rdfs:label "provides_opportunities_for" ;
+    rdfs:domain :trend ;
+    rdfs:range :entity .
+
+:regulation a owl:Class ;
+    rdfs:label "regulation" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:strategy_is a owl:ObjectProperty ;
+    rdfs:label "strategy_is" ;
+    rdfs:domain :company ;
+    rdfs:range :trend .
+
+:supports a owl:ObjectProperty ;
+    rdfs:label "supports" ;
+    rdfs:domain :trend ;
+    rdfs:range :subcategory .
+
+entity:ai_advances a :trend ;
+    rdfs:label "ai advances" ;
+    :confidence 1e+00 ;
+    :description "AI advances are a factor for growth in the toys and games market in South Korea." ;
+    :drives entity:toys_and_games_market_in_south_korea ;
+    :extractedAt "2026-01-23T11:10:59+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A trend involving the use of artificial intelligence in toys to create interactive and personalized experiences." .
+
+entity:bloks a :brand ;
+    rdfs:label "bloks" ;
+    :competes_with entity:lego ;
+    :confidence 1e+00 ;
+    :description "Bloks is a domestic Chinese brand that competes with Lego in the construction toys category." ;
+    :extractedAt "2026-01-23T11:10:54+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A domestic Chinese construction toy brand that gained market share at the expense of LEGO in 2023." .
+
+entity:chinese_consumers a :consumer_segment ;
+    rdfs:label "chinese consumers" ;
+    :confidence 1e+00 ;
+    :description "Chinese consumers are showing a growing appreciation for toys that reflect their cultural identity." ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :prefers entity:toys_reflecting_chinese_cultural_identity ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Consumers in China, who are showing a growing appreciation for toys reflecting their cultural identity." .
+
+entity:ecommerce a :distribution_channel ;
+    rdfs:label "ecommerce" ;
+    :competes_with entity:offline_retail ;
+    :confidence 1e+00 ;
+    :description "E-commerce competes with offline retail for market share in the toys and games industry." ;
+    :extractedAt "2026-01-23T11:10:43+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The online retail channel, which is expanding its share of distribution in the toys and games market." .
+
+entity:edutech_innovations a :trend ;
+    rdfs:label "edutech innovations" ;
+    :confidence 1e+00 ;
+    :description "Edu-tech innovations are a factor for growth in the toys and games market in South Korea." ;
+    :drives entity:toys_and_games_market_in_south_korea ;
+    :extractedAt "2026-01-23T11:10:59+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A trend involving innovations in educational technology, which is a factor for growth in the South Korean market." .
+
+entity:enlighten_qman a :brand ;
+    rdfs:label "enlighten qman" ;
+    :competes_with entity:lego ;
+    :confidence 1e+00 ;
+    :description "Enlighten (Qman) is a domestic Chinese brand that competes with Lego in the construction toys category." ;
+    :extractedAt "2026-01-23T11:10:55+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A domestic Chinese construction toy brand that gained market share at the expense of LEGO in 2023." .
+
+entity:increasing_awareness_of_gender_equality a :trend ;
+    rdfs:label "increasing awareness of gender equality" ;
+    :confidence 1e+00 ;
+    :description "The increasing awareness of gender equality is a trend that is driving the release of more gender-neutral toys." ;
+    :drives entity:genderneutral_toys ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A societal trend leading to the release of more gender-neutral toys." .
+
+entity:indonesia a :location ;
+    rdfs:label "indonesia" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in Indonesia is part of the larger Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:10:47+00:00"^^xsd:dateTime ;
+    :location_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A country in Asia with low per capita spend on toys and games, expected to be a dynamic market." .
+
+entity:kidult_trend a :trend ;
+    rdfs:label "childhood nostalgia",
+        "kidult trend" ;
+    :confidence 1e+00 ;
+    :description "The kidult trend is a factor for growth in the toys and games market in South Korea." ;
+    :drives entity:toys_and_games_market_in_south_korea ;
+    :extractedAt "2026-01-23T11:11:05+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Toy companies are tapping into the nostalgia of adult consumers for their childhood to drive sales in the kidults segment." .
+
+entity:live_streaming_ecommerce a :trend ;
+    rdfs:label "live streaming ecommerce" ;
+    :confidence 1e+00 ;
+    :description "Live streaming e-commerce is driving sales growth for traditional toys and games on the Douyin platform in China." ;
+    :drives_growth_on entity:douyin ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A rapidly developing e-commerce model in China that is driving sales on platforms like Douyin." .
+
+entity:new_character_developments a :trend ;
+    rdfs:label "new character developments" ;
+    :confidence 1e+00 ;
+    :description "New character developments are a factor for growth in the toys and games market in South Korea." ;
+    :drives entity:toys_and_games_market_in_south_korea ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The development of new characters to drive interest and sales in toys and games." .
+
+entity:one_piece_card_game a :brand ;
+    rdfs:label "one piece card game" ;
+    :confidence 1e+00 ;
+    :description "One Piece Card Game is a brand within the trading card games subcategory." ;
+    :extractedAt "2026-01-23T11:10:50+00:00"^^xsd:dateTime ;
+    :is_a entity:trading_card_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A newcomer brand of trading card games that has been supporting momentum in Japan." .
+
+entity:pok_mon_cards a :brand ;
+    rdfs:label "pokémon cards" ;
+    :confidence 1e+00 ;
+    :description "Pokémon cards are a brand within the trading card games subcategory." ;
+    :extractedAt "2026-01-23T11:10:48+00:00"^^xsd:dateTime ;
+    :is_a entity:trading_card_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A leading brand of trading card games that has been central to the category's boom in Japan." .
+
+entity:pop_mart a :company ;
+    rdfs:label "pop mart" ;
+    :confidence 1e+00 ;
+    :description "Pop Mart experienced dynamic growth due to its involvement in the blind collectables craze." ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :operates_in entity:blind_collectables_craze ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A Chinese toy company known for its blind-box collectible figures." .
+
+entity:popochan a :brand ;
+    rdfs:label "popochan" ;
+    :confidence 1e+00 ;
+    :description "The discontinuation of the Popo-chan brand negatively affected the sales performance of the dolls and accessories category in Japan." ;
+    :extractedAt "2026-01-23T11:10:52+00:00"^^xsd:dateTime ;
+    :impacts entity:dolls_and_accessories ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A major doll brand in Japan that was discontinued, contributing to the decline in its category." .
+
+entity:sembo a :brand ;
+    rdfs:label "sembo" ;
+    :competes_with entity:lego ;
+    :confidence 1e+00 ;
+    :description "Sembo is a domestic Chinese brand that competes with Lego in the construction toys category." ;
+    :extractedAt "2026-01-23T11:10:55+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A domestic Chinese construction toy brand that gained market share at the expense of LEGO in 2023. It develops series with local cultural themes and IPs." .
+
+entity:subscriptions a :metric ;
+    rdfs:label "subscriptions" ;
+    :confidence 1e+00 ;
+    :description "Subscription models are poised to integrate gaming resources across various platforms for mobile games." ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :impacts entity:mobile_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A business model where a customer must pay a recurring price at regular intervals to access a product or service." .
+
+entity:wei_schwarz a :brand ;
+    rdfs:label "weiß schwarz" ;
+    :confidence 1e+00 ;
+    :description "Weiß Schwarz is a brand within the trading card games subcategory." ;
+    :extractedAt "2026-01-23T11:10:49+00:00"^^xsd:dateTime ;
+    :is_a entity:trading_card_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A long-selling brand of trading card games in Japan." .
+
+entity:adults a :consumer_segment ;
+    rdfs:label "adults" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "People who are fully grown or developed." .
+
+entity:availability_of_cheap_smartphonesdata_plans a :trend ;
+    rdfs:label "availability of cheap smartphonesdata plans",
+        "cheap smartphones and data plans" ;
+    :confidence 1e+00 ;
+    :description "The availability of cheap smartphones and data plans helps to boost demand and drive growth in the Indian video games market.",
+        "The availability of cheap smartphones and data plans in India is boosting demand for video games." ;
+    :drives entity:mobile_games,
+        entity:video_games ;
+    :extractedAt "2026-01-23T11:11:06+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The availability of cheap smartphones and data plans is a factor expected to boost demand for video games in India." .
+
+entity:blind_collectables_craze a :trend ;
+    rdfs:label "blind collectables craze" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A trend where consumers purchase products in sealed packaging, without knowing the specific contents until the package is opened." .
+
+entity:children a :consumer_segment ;
+    rdfs:label "children" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "People of a young age." .
+
+entity:crossplatform_games a :trend ;
+    rdfs:label "crossplatform games" ;
+    :confidence 1e+00 ;
+    :description "Cross-platform games are expected to provide additional sales opportunities for mobile games.",
+        "The trend of cross-platform games creates new opportunities and positively impacts the mobile games category." ;
+    :extractedAt "2026-01-23T11:10:47+00:00"^^xsd:dateTime ;
+    :impacts entity:mobile_gaming ;
+    :provides_opportunities_for entity:mobile_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The emergence of games that can be played on multiple platforms, providing additional sales opportunities for mobile games." .
+
+entity:declining_birth_rates a :trend ;
+    rdfs:label "declining birth rates" ;
+    :confidence 1e+00 ;
+    :description "Declining birth rates are negatively impacting the traditional toys and games market by shrinking the children's market.",
+        "The continued decline in the birth rate in China has led to challenges and declining sales for the baby and infant toys category." ;
+    :extractedAt "2026-01-23T11:10:42+00:00"^^xsd:dateTime ;
+    :impacts entity:baby_and_infant_toys,
+        entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Declining birth rates in major Asia Pacific markets are causing companies to increasingly target the kidults segment." .
+
+entity:douyin a :distribution_channel ;
+    rdfs:label "douyin" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:54+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A live streaming e-commerce platform in China where sales of traditional toys and games continued to grow in 2023." .
+
+entity:duel_masters a :brand ;
+    rdfs:label "duel masters" ;
+    :confidence 1e+00 ;
+    :description "Duel Masters is a brand within the trading card games subcategory.",
+        "Duel Masters' success was linked to the popularity of trading cards." ;
+    :extractedAt "2026-01-23T11:10:49+00:00"^^xsd:dateTime ;
+    :is_a entity:trading_card_games ;
+    :related_to entity:trading_cards ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A long-selling brand of trading card games in Japan." .
+
+entity:esports a :trend ;
+    rdfs:label "esports" ;
+    :confidence 1e+00 ;
+    :description "The increasing popularity of e-sports in India is supporting the growth of mobile gaming.",
+        "The increasing popularity of e-sports is driving growth and uptake in the mobile gaming category in India." ;
+    :drives entity:mobile_gaming ;
+    :extractedAt "2026-01-23T11:10:44+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :supports entity:mobile_gaming ;
+    rdfs:comment "The increasing popularity of e-sports is a key factor boosting the growth of video games, particularly mobile gaming, in India." .
+
+entity:european_markets a :market ;
+    rdfs:label "european markets" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:11:00+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The collective term for the video game markets in Europe, which South Korean companies are targeting." .
+
+entity:experiential_visits a :trend ;
+    rdfs:label "experiential visits" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:44+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The strategy for offline stores to create fun and engaging spaces to attract consumers and differentiate from competitors." .
+
+entity:genderneutral_toys a :trend ;
+    rdfs:label "genderneutral toys" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A trend of creating products that are not aimed at a specific gender to widen the target market." .
+
+entity:genshin_impact a :brand ;
+    rdfs:label "genshin impact",
+        "meta quest 3" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:11:10+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A massively popular game from miHoYo with a large user base. | A product launch that contributed to growth in the AR/VR headsets category in Japan." .
+
+entity:global_expansion a :trend ;
+    rdfs:label "global expansion" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A strategy by companies to expand their business operations into other countries." .
+
+entity:honkai_star_rail a :brand ;
+    rdfs:label "honkai star rail" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:51+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A new game released by miHoYo." .
+
+entity:international_audiences a :consumer_segment ;
+    rdfs:label "international audiences" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Audiences for video games located in countries around the world." .
+
+entity:justice_online a :brand ;
+    rdfs:label "justice online" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:51+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A mobile game from NetEase." .
+
+entity:kidults a :consumer_segment ;
+    rdfs:label "adult consumers",
+        "kidults" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:10:42+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Adults who buy toys and games for themselves. This segment is a key target for companies due to declining birth rates and their higher spending power." .
+
+entity:netease a :company ;
+    rdfs:label "netease" ;
+    :confidence 1e+00 ;
+    :description "NetEase is the company that developed and operates the mobile game Justice Online.",
+        "The company NetEase operates within the toys and games market in China." ;
+    :extractedAt "2026-01-23T11:10:50+00:00"^^xsd:dateTime ;
+    :operates_in entity:euromonitor_international ;
+    :owns entity:justice_online ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A leading video games company in China. Its mobile game Justice Online attracted players through price reductions." .
+
+entity:nintendos_nextgen_console a :product ;
+    rdfs:label "nintendo nextgen console",
+        "nintendos nextgen console" ;
+    :confidence 1e+00 ;
+    :description "Nintendo's next-gen console will follow the Nintendo Switch.",
+        "Nintendo's next-generation console will be the successor to the highly successful Nintendo Switch." ;
+    :developed_by entity:nintendo ;
+    :expected_launch_period "October 2024 to March 2025" ;
+    :extractedAt "2026-01-23T11:11:18+00:00"^^xsd:dateTime ;
+    :related_to entity:nintendo ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The next-generation video game console from Nintendo, expected to be launched between October 2024 and March 2025." .
+
+entity:north_america a :location ;
+    rdfs:label "north america" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The region with the second highest sales of traditional toys and games globally." .
+
+entity:north_american_markets a :market ;
+    rdfs:label "north american markets" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:11:00+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The collective term for the video game markets in North America, which South Korean companies are targeting." .
+
+entity:older_people a :consumer_segment ;
+    rdfs:label "older people" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "People of advanced age." .
+
+entity:rising_smartphone_penetration a :trend ;
+    rdfs:label "rising smartphone penetration" ;
+    :confidence 1e+00 ;
+    :description "Rising smartphone penetration is a key driver for the growth of the video games market in India.",
+        "The rising penetration of smartphones in India is boosting demand for video games." ;
+    :drives entity:mobile_games,
+        entity:video_games ;
+    :extractedAt "2026-01-23T11:10:45+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Rising smartphone penetration is a factor expected to boost demand for video games in India." .
+
+entity:tencent a :company ;
+    rdfs:label "tencent" ;
+    :confidence 1e+00 ;
+    :description "Tencent is the leading company in the video games sector in China.",
+        "The company Tencent is a major player in the toys and games market in China." ;
+    :extractedAt "2026-01-23T11:10:54+00:00"^^xsd:dateTime ;
+    :operates_in entity:euromonitor_international,
+        entity:video_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The overall leader in the Chinese toys and games market, heading up video games. It lost market share in 2023." .
+
+entity:video_games_operators a :organization ;
+    rdfs:label "genderneutral products",
+        "video games operators" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:11:03+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Operators of video games that are subject to regulations regarding probability-based items. | A trend where toy and game companies are increasingly focusing on products that are not targeted at a specific gender to widen their market." .
+
+entity:western_europe a :location ;
+    rdfs:label "western europe" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A region that Asia Pacific has recently overtaken in traditional toys and games sales." .
+
+entity:yugioh a :brand ;
+    rdfs:label "yugioh" ;
+    :confidence 1e+00 ;
+    :description "Yu-Gi-Oh! is a brand within the trading card games subcategory.",
+        "Yu-Gi-Oh!'s success was linked to the popularity of trading cards." ;
+    :extractedAt "2026-01-23T11:10:48+00:00"^^xsd:dateTime ;
+    :is_a entity:trading_card_games ;
+    :related_to entity:trading_cards ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A long-selling brand of trading card games in Japan." .
+
+:codevelops_with a owl:ObjectProperty ;
+    rdfs:label "codevelops_with" ;
+    rdfs:domain :brand ;
+    rdfs:range :company .
+
+:subcategory_of a owl:ObjectProperty ;
+    rdfs:label "subcategory_of" ;
+    rdfs:domain :subcategory ;
+    rdfs:range :entity .
+
+entity:aienhanced_toys a :category ;
+    rdfs:label "aienhanced toys" ;
+    :confidence 1e+00 ;
+    :description "AI-enhanced toys cater to the preferences of adults.",
+        "AI-enhanced toys cater to the preferences of children.",
+        "AI-enhanced toys have the potential to serve as companions for older people." ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :targets entity:adults,
+        entity:children,
+        entity:older_people ;
+    rdfs:comment "Toys that are enhanced with artificial intelligence to provide interactive experiences." .
+
+entity:computer_games a :subcategory ;
+    rdfs:label "computer games" ;
+    :confidence 1e+00 ;
+    :description "Computer Games are a type of video game software." ;
+    :extractedAt "2026-01-23T11:11:01+00:00"^^xsd:dateTime ;
+    :part_of entity:video_games_software ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A subcategory of Video Games Software, as defined by the Euromonitor Passport taxonomy." .
+
+entity:console_games a :subcategory ;
+    rdfs:label "arvr headsets",
+        "console games",
+        "handheld consoles",
+        "static consoles" ;
+    :confidence 1e+00 ;
+    :description "Static Consoles is a subcategory of Video Games Hardware." ;
+    :extractedAt "2026-01-23T11:11:22+00:00"^^xsd:dateTime ;
+    :part_of entity:video_games_software ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Video games played on a dedicated electronic device that outputs a video signal or visual image to display a video game that one or more people can play. | A category in video games that recorded high growth in Japan in 2023." .
+
+entity:construction a :category ;
+    rdfs:label "construction" ;
+    :confidence 1e+00 ;
+    :description "Construction is a key category driving growth within the Chinese traditional toys and games market.",
+        "Construction is a subcategory of Traditional Toys and Games.",
+        "Construction is one of the two biggest categories in traditional toys and games in China." ;
+    :drives entity:chinese_toys_and_games_market ;
+    :extractedAt "2026-01-23T11:10:57+00:00"^^xsd:dateTime ;
+    :part_of entity:chinese_toys_and_games_market,
+        entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A subcategory of traditional toys and games. It is one of the two biggest categories in China's traditional toys market." .
+
+entity:mihoyo a :company ;
+    rdfs:label "mihoyo" ;
+    :confidence 1e+00 ;
+    :description "The company miHoYo operates within the toys and games market in China.",
+        "miHoYo is the company that developed and operates the game Genshin Impact.",
+        "miHoYo is the company that developed and released the game Honkai: Star Rail." ;
+    :extractedAt "2026-01-23T11:10:51+00:00"^^xsd:dateTime ;
+    :operates_in entity:euromonitor_international ;
+    :owns entity:genshin_impact,
+        entity:honkai_star_rail ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A leading video games company in China that launched the new game Honkai: Star Rail." .
+
+entity:offline_retail a :distribution_channel ;
+    rdfs:label "appliances and electronics specialists",
+        "offline retail",
+        "offline stores",
+        "physical stores",
+        "vending channel" ;
+    :confidence 1e+00 ;
+    :description "Offline retail stores are increasingly offering experiential visits to attract customers and compete with e-commerce." ;
+    :extractedAt "2026-01-23T11:11:13+00:00"^^xsd:dateTime ;
+    :offers entity:experiential_visits ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "Brick-and-mortar retail stores, which need to offer experiential visits to compete with e-commerce. | A retail channel in Japan that accounts for 14% of toy and game sales." .
+
+entity:probabilitybased_items a :regulation ;
+    rdfs:label "covid19 resurgence in china",
+        "probabilitybased items",
+        "probabilitybased items disclosure" ;
+    :confidence 1e+00 ;
+    :description "The disclosure regulation for probability-based items impacts the video games industry in South Korea.",
+        "The push for greater disclosure of probability-based items affects video games operators in South Korea.",
+        "The resurgence of COVID-19 cases and subsequent lockdowns in China negatively impacted the country's toys and games market in 2022." ;
+    :effective_date "March 2024" ;
+    :extractedAt "2026-01-23T11:11:19+00:00"^^xsd:dateTime ;
+    :impacts entity:euromonitor_international,
+        entity:video_games,
+        entity:video_games_operators ;
+    :jurisdiction "South Korea" ;
+    :objective "Ensure transparency and consumer awareness" ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "In-game items that are purchased by players for a fee and are influenced by chance factors | A resurgence of COVID-19 cases in China in 2022 led to renewed lockdowns and a decline in toy and games sales. | A regulation in South Korea since March 2024 requiring video game operators to disclose the probabilities of chance-based items purchased by players." .
+
+entity:south_korea a :location ;
+    rdfs:label "south korea" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in South Korea is part of the larger Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:10:41+00:00"^^xsd:dateTime ;
+    :location_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A country in Asia where the toys and games market was declining in 2023." .
+
+entity:toys_reflecting_chinese_cultural_identity a :trend ;
+    rdfs:label "toys reflecting chinese cultural identity",
+        "toys with cultural identity" ;
+    :confidence 1e+00 ;
+    :description "The growing consumer trend of preferring toys with cultural identity is driving growth and change within the toys and games market in China." ;
+    :drives entity:euromonitor_international ;
+    :extractedAt "2026-01-23T11:11:04+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A growing preference among Chinese consumers for toys that reflect their own cultural identity." .
+
+:owns a owl:ObjectProperty ;
+    rdfs:label "owns" ;
+    rdfs:domain :entity ;
+    rdfs:range :brand .
+
+entity:dena a :company ;
+    rdfs:label "dena",
+        "edion" ;
+    :codevelops_with entity:pok_mon_trading_card_game_pocket_mobile_app ;
+    :confidence 1e+00 ;
+    :description "DeNA and Pokémon are jointly developing the Pokémon Trading Card Game Pocket mobile app.",
+        "The retailer Edion operates within the Japanese market." ;
+    :extractedAt "2026-01-23T11:11:13+00:00"^^xsd:dateTime ;
+    :operates_in entity:japan ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "An appliances and electronics specialist retailer in Japan that is enhancing its toy and game sections with experiential features." .
+
+entity:south_korean_companies a :company ;
+    rdfs:label "south korean companies" ;
+    :confidence 1e+00 ;
+    :description "South Korean companies are creating games tailored for international audiences.",
+        "South Korean companies are seeking success in European markets.",
+        "South Korean companies are seeking success in North American markets.",
+        "South Korean companies are targeting global expansion in the video games industry." ;
+    :extractedAt "2026-01-23T11:11:00+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :strategy "Targeting global expansion, creating PC/console games for international audiences" ;
+    :strategy_is entity:global_expansion ;
+    :targets entity:european_markets,
+        entity:international_audiences,
+        entity:north_american_markets ;
+    rdfs:comment "Video game companies based in South Korea that are targeting global expansion." .
+
+:product a owl:Class ;
+    rdfs:label "product" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:china a :location ;
+    rdfs:label "china" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in China is part of the larger Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:10:41+00:00"^^xsd:dateTime ;
+    :location_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A country in Asia which saw a strong rebound in its toys and games market in 2023, helping to drive regional growth." .
+
+entity:dolls_and_accessories a :category ;
+    rdfs:label "action figures and accessories",
+        "dolls and accessories",
+        "dressup and role play" ;
+    :confidence 1e+00 ;
+    :description "Dolls and Accessories is a subcategory of Traditional Toys and Games.",
+        "Dolls and accessories is a key category driving growth within the Chinese traditional toys and games market.",
+        "Dolls and accessories is one of the two biggest categories in traditional toys and games in China." ;
+    :drives entity:chinese_toys_and_games_market ;
+    :extractedAt "2026-01-23T11:11:25+00:00"^^xsd:dateTime ;
+    :part_of entity:chinese_toys_and_games_market,
+        entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A category within traditional toys and games in Japan that saw a sharp decline in value sales in 2023." .
+
+entity:pok_mon a :brand ;
+    rdfs:label "pokemon",
+        "pokémon",
+        "tamagotchi" ;
+    :codevelops_with entity:dena,
+        entity:pok_mon_trading_card_game_pocket_mobile_app ;
+    :confidence 1e+00 ;
+    :description "Pokémon and DeNA are jointly developing the Pokémon Trading Card Game Pocket mobile app.",
+        "Pokémon's success was linked to the popularity of trading cards." ;
+    :extractedAt "2026-01-23T11:11:18+00:00"^^xsd:dateTime ;
+    :related_to entity:trading_cards ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A Japanese media franchise managed by The Pokémon Company, a company founded by Nintendo, Game Freak, and Creatures. | A product whose strong performance contributed to growth in the hand-held consoles category in Japan." .
+
+entity:pok_mon_trading_card_game_pocket_mobile_app a :product ;
+    rdfs:label "pokemon trading card game pocket mobile app",
+        "pokémon trading card game pocket",
+        "pokémon trading card game pocket mobile app" ;
+    :confidence 1e+00 ;
+    :description "The Pokémon Trading Card Game Pocket mobile app is expected to extend the boom of Pokémon cards." ;
+    :extractedAt "2026-01-23T11:11:16+00:00"^^xsd:dateTime ;
+    :impacts entity:pok_mon ;
+    :launch_year 2024 ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :type "mobile app" ;
+    rdfs:comment "A mobile app for the Pokémon Trading Card Game, developed by Pokémon and DeNA, with a targeted launch in 2024." .
+
+:distribution_channel a owl:Class ;
+    rdfs:label "distribution channel",
+        "distribution_channel" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:is_a a owl:ObjectProperty ;
+    rdfs:label "is_a" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+:related_to a owl:ObjectProperty ;
+    rdfs:label "related_to" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+entity:games_and_puzzles a :category ;
+    rdfs:label "games and puzzles" ;
+    :confidence 1e+00 ;
+    :description "Games and Puzzles is a subcategory of Traditional Toys and Games.",
+        "The games and puzzles category showed dynamic growth, which helped the overall traditional toys and games market in Japan record positive growth in 2023." ;
+    :drives_growth_in entity:traditional_toys_and_games ;
+    :extractedAt "2026-01-23T11:10:47+00:00"^^xsd:dateTime ;
+    :part_of entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A category within traditional toys and games that saw strong growth in Japan in 2023." .
+
+entity:trading_cards a :category ;
+    rdfs:label "trading cards" ;
+    :confidence 1e+00 ;
+    :extractedAt "2026-01-23T11:07:50+00:00"^^xsd:dateTime ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A type of card game that mixes strategic deck building with features of trading cards, introduced with Magic: The Gathering in 1993." .
+
+:market a owl:Class ;
+    rdfs:label "market" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:targets a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+entity:india a :location ;
+    rdfs:label "india" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in India is part of the larger Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:10:46+00:00"^^xsd:dateTime ;
+    :location_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A country in Asia with low per capita spend on toys and games, expected to be a dynamic market." .
+
+:consumer_segment a owl:Class ;
+    rdfs:label "consumer segment",
+        "consumer_segment" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+:location_of a owl:ObjectProperty ;
+    rdfs:label "location_of" ;
+    rdfs:domain :location ;
+    rdfs:range :market .
+
+:subcategory a owl:Class ;
+    rdfs:label "subcategory" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:baby_and_infant_toys a :category ;
+    rdfs:label "baby and infant toys",
+        "toys and games" ;
+    :confidence 1e+00 ;
+    :description "Baby and infant toys are a category within the broader traditional toys and games market.",
+        "The market for toys and games is located in India, as per the ontology hints and document context." ;
+    :extractedAt "2026-01-23T11:11:21+00:00"^^xsd:dateTime ;
+    :location_of entity:india ;
+    :part_of entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A category within traditional toys and games in China that faced challenges due to the declining birth rate." .
+
+entity:sony a :company ;
+    rdfs:label "digital",
+        "sony" ;
+    :confidence 1e+00 ;
+    :description "Digital is a subcategory of Video Games Software.",
+        "Sony implemented a price reduction strategy for the PlayStation 5 in China.",
+        "Sony is the parent company of the PlayStation brand.",
+        "Sony launched the PlayStation 5 Slim in India in April 2024." ;
+    :extractedAt "2026-01-23T11:11:22+00:00"^^xsd:dateTime ;
+    :impacts entity:playstation ;
+    :launches_in entity:india ;
+    :owns entity:playstation ;
+    :part_of entity:video_games_software ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A Japanese multinational conglomerate corporation headquartered in Kōnan, Minato, Tokyo | A subcategory of Video Games Software, as defined by the Euromonitor Passport taxonomy." .
+
+:competes_with a owl:ObjectProperty ;
+    rdfs:label "competes_with" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+entity:chinese_toys_and_games_market a :market ;
+    rdfs:label "chinese toys and games market",
+        "toys and games market in china" ;
+    :confidence 1e+00 ;
+    :description "The toys and games market in China is geographically located in China." ;
+    :extractedAt "2026-01-23T11:11:17+00:00"^^xsd:dateTime ;
+    :forecast "solid if unspectacular growth" ;
+    :location_of entity:china ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The market for toys and games in China. It is expected to see solid growth over the forecast period." .
+
+entity:japan a :location ;
+    rdfs:label "asia pacific",
+        "japan" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in Japan is part of the larger Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:11:06+00:00"^^xsd:dateTime ;
+    :location_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The geographical region of Asia Pacific, which is the largest market for toys and games globally." .
+
+entity:mobile_gaming a :subcategory ;
+    rdfs:label "mobile gaming",
+        "online games and subscriptions" ;
+    :confidence 1e+00 ;
+    :description "Mobile gaming is a subcategory within the broader video games software category.",
+        "Mobile gaming is the largest sub-category within the video games software market in Asia Pacific.",
+        "Online Games and Subscriptions is a subcategory of Digital video game software." ;
+    :extractedAt "2026-01-23T11:11:24+00:00"^^xsd:dateTime ;
+    :part_of entity:sony,
+        entity:video_games_software ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :subcategory_of entity:video_games_software ;
+    rdfs:comment "A subcategory of video games played on mobile devices, which accounts for a majority of video games software sales in Asia Pacific." .
+
+entity:nintendo a :company ;
+    rdfs:label "Nintendo Switch",
+        "nintendo",
+        "nintendo switch",
+        "playstation vr2" ;
+    :competes_with entity:lego ;
+    :confidence 1e+00 ;
+    :description "Nintendo and Lego are the top two brands in the Asia Pacific toys and games market, making them competitors.",
+        "Nintendo is one of the top brands in the toys and games market in Asia Pacific.",
+        "Nintendo is one of the top brands operating in the Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:11:11+00:00"^^xsd:dateTime ;
+    :operates_in entity:japan,
+        entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A Japanese multinational video game company headquartered in Kyoto, Japan | A product launch that contributed to growth in the AR/VR headsets category in Japan." .
+
+:impacts a owl:ObjectProperty ;
+    rdfs:label "impacts" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+:location a owl:Class ;
+    rdfs:label "location" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:toys_and_games_market_in_south_korea a :market ;
+    rdfs:label "toys and games in south korea",
+        "toys and games market in south korea" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in South Korea is part of the broader Asia Pacific market.",
+        "The toys and games market in South Korea is geographically located in South Korea." ;
+    :extractedAt "2026-01-23T11:11:07+00:00"^^xsd:dateTime ;
+    :forecast "return to growth" ;
+    :location_of entity:south_korea ;
+    :part_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The market for toys and games in South Korea, which saw a notable drop in sales in 2023." .
+
+:category a owl:Class ;
+    rdfs:label "category" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:mobile_games a :subcategory ;
+    rdfs:label "mobile games",
+        "video games in india" ;
+    :confidence 1e+00 ;
+    :description "Mobile Games is a subcategory of Digital video game software.",
+        "Mobile games are expanding into computer games through cross-platform strategies.",
+        "Mobile games are expanding into console games through cross-platform strategies.",
+        "Mobile games is the biggest category in video games in China." ;
+    :extractedAt "2026-01-23T11:11:05+00:00"^^xsd:dateTime ;
+    :part_of entity:sony,
+        entity:video_games ;
+    :related_to entity:computer_games,
+        entity:console_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The largest subcategory of video games in China, expected to continue growing." .
+
+entity:trading_card_games a :subcategory ;
+    rdfs:label "trading card games" ;
+    :confidence 1e+00 ;
+    :description "Trading card games are a subcategory of games and puzzles.",
+        "Trading card games are a subcategory of the games and puzzles category." ;
+    :extractedAt "2026-01-23T11:10:48+00:00"^^xsd:dateTime ;
+    :part_of entity:games_and_puzzles ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :subcategory_of entity:games_and_puzzles ;
+    rdfs:comment "A subcategory of games and puzzles, sales of which have been growing rapidly in Japan." .
+
+entity:video_games_software a :subcategory ;
+    rdfs:label "video games hardware",
+        "video games software" ;
+    :confidence 1e+00 ;
+    :description "Video games software is a sub-category of the broader video games market.",
+        "Video games software is a subcategory of the main video games category." ;
+    :extractedAt "2026-01-23T11:11:21+00:00"^^xsd:dateTime ;
+    :part_of entity:video_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :subcategory_of entity:video_games ;
+    rdfs:comment "Software for video games, which dominates overall toys and games sales in Asia Pacific." .
+
+:drives a owl:ObjectProperty ;
+    rdfs:label "drives" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+entity:euromonitor_international a :company ;
+    rdfs:label "euromonitor international",
+        "toys and games in china" ;
+    :confidence 1e+00 ;
+    :description "The market for toys and games in China is part of the broader Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:11:04+00:00"^^xsd:dateTime ;
+    :part_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A global market research company providing strategic intelligence on industries, countries, and consumers. | The market for toys and games in China, which experienced a strong bounceback in 2023." .
+
+entity:playstation a :brand ;
+    rdfs:label "PlayStation 5",
+        "PlayStation 5 Slim",
+        "playstation",
+        "playstation 5",
+        "playstation 5 slim",
+        "ps" ;
+    :competes_with entity:lego,
+        entity:nintendo ;
+    :confidence 1e+00 ;
+    :description "PlayStation is a major brand operating in the Asia Pacific market.",
+        "PlayStation is one of the top brands in the toys and games market in Asia Pacific.",
+        "PlayStation is reported to have made major share gains on Lego in the brand rankings in Asia Pacific in 2023.",
+        "PlayStation is reported to have made major share gains on Nintendo in the brand rankings in Asia Pacific in 2023.",
+        "PlayStation's accessibility improved in India due to a stabilized supply situation.",
+        "PlayStation's popularity in China was helped by the PlayStation 5.",
+        "['PlayStation 5 is a product within the PlayStation brand lineup.', 'PlayStation 5 Slim is a newer model of the PlayStation 5.']" ;
+    :extractedAt "2026-01-23T11:11:15+00:00"^^xsd:dateTime ;
+    :is_a entity:playstation ;
+    :launch_date "April 2024" ;
+    :launch_location "India" ;
+    :operates_in entity:china,
+        entity:india,
+        entity:japan,
+        entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A video gaming brand consisting of five home video game consoles, as well as a media center, an online service, a line of controllers, two handhelds and a phone, as well as multiple magazines | A smaller version of the PlayStation 5 console, launched by Sony in India in April 2024." .
+
+:company a owl:Class ;
+    rdfs:label "company" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:lego a :company ;
+    rdfs:label "capsule toys",
+        "lego" ;
+    :confidence 1e+00 ;
+    :description "Lego is one of the top brands in the toys and games market in Asia Pacific.",
+        "Lego is one of the top brands operating in the Asia Pacific market.",
+        "Lego is the leading company in the traditional toys and games sector in China.",
+        "The company LEGO is a major player in the toys and games market in China." ;
+    :extractedAt "2026-01-23T11:11:13+00:00"^^xsd:dateTime ;
+    :operates_in entity:euromonitor_international,
+        entity:japan,
+        entity:toys_and_games_in_asia_pacific,
+        entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "A leading global toy company that launched five new gender-neutral series in March 2024 | It is the number one player in traditional toys and games in China but lost share in 2023. | A type of toy popular in the vending channel in Japan." .
+
+entity:video_games a :category ;
+    rdfs:label "video games" ;
+    :confidence 1e+00 ;
+    :description "Video Games is a main category within the overall Toys and Games market." ;
+    :extractedAt "2026-01-23T11:10:45+00:00"^^xsd:dateTime ;
+    :part_of entity:baby_and_infant_toys ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "The category of electronic video games, which outsells traditional toys and games by more than three times in Asia Pacific." .
+
+:operates_in a owl:ObjectProperty ;
+    rdfs:label "operates_in" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+:brand a owl:Class ;
+    rdfs:label "brand" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:traditional_toys_and_games a :category ;
+    rdfs:label "arts and crafts",
+        "traditional toys and games" ;
+    :confidence 1e+00 ;
+    :description "Arts and Crafts is a subcategory of Traditional Toys and Games.",
+        "Kidults are a key target consumer segment for the traditional toys and games category.",
+        "Traditional Toys and Games is a main category within the overall Toys and Games market." ;
+    :extractedAt "2026-01-23T11:11:25+00:00"^^xsd:dateTime ;
+    :part_of entity:baby_and_infant_toys,
+        entity:traditional_toys_and_games ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    :targets entity:kidults ;
+    rdfs:comment "A subcategory of Traditional Toys and Games, as defined by the Euromonitor Passport taxonomy." .
+
+:part_of a owl:ObjectProperty ;
+    rdfs:label "part_of" ;
+    rdfs:domain :entity ;
+    rdfs:range :entity .
+
+:trend a owl:Class ;
+    rdfs:label "trend" ;
+    rdfs:comment "Fields: id, label, aliases, description" ;
+    rdfs:subClassOf :entity .
+
+entity:toys_and_games_in_asia_pacific a :market ;
+    rdfs:label "Toys and Games in Asia Pacific",
+        "toys and games in asia pacific",
+        "toys and games in japan",
+        "toys and games market in asia pacific" ;
+    :competes_with entity:north_america,
+        entity:western_europe ;
+    :confidence 1e+00 ;
+    :description "The Toys and Games market in Asia Pacific competes with the North American market in terms of sales volume.",
+        "The Toys and Games market in Asia Pacific competes with the Western European market in terms of sales volume.",
+        "The market for toys and games in Japan is part of the broader Asia Pacific market." ;
+    :extractedAt "2026-01-23T11:11:17+00:00"^^xsd:dateTime ;
+    :forecast "Positive if gradually slowing growth" ;
+    :part_of entity:toys_and_games_in_asia_pacific ;
+    :source_urls "Toys_and_Games_in_Asia_Pacific.txt" ;
+    rdfs:comment "It is the biggest regional market globally and saw a strong rebound in 2023 after a dip in 2022. | The market for toys and games in Japan, which stagnated in 2023." .
+
+:entity a owl:Class ;
+    rdfs:label "entity" ;
+    rdfs:comment "Fields: id, label, aliases" .
+

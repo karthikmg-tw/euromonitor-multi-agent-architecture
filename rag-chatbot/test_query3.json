@@ -1,0 +1,7 @@
+{
+  "query": "toys",
+  "top_k": 3,
+  "include_relationships": false,
+  "min_similarity": 0.0,
+  "debug": true
+}

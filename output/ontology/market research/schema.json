@@ -1,0 +1,1419 @@
+{
+  "domain": "market research",
+  "version": "1.0.2",
+  "last_updated": "2026-01-23T11:10:40Z",
+  "entity_types": {
+    "entity": {
+      "parent_type": null,
+      "fields": [
+        "id",
+        "label",
+        "aliases"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": null,
+      "similarity_check": null
+    },
+    "market": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "location": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "consumer_segment": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "category": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "trend": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "distribution_channel": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "subcategory": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "brand": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "company": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "metric": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "product": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "regulation": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "organization": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:07:51Z",
+      "similarity_check": null
+    },
+    "consumer segment": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:10:40Z",
+      "similarity_check": null
+    },
+    "distribution channel": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:10:40Z",
+      "similarity_check": null
+    },
+    "event": {
+      "parent_type": "entity",
+      "fields": [
+        "id",
+        "label",
+        "aliases",
+        "description"
+      ],
+      "required_fields": [
+        "id",
+        "label"
+      ],
+      "created_at": "2026-01-23T11:10:40Z",
+      "similarity_check": null
+    }
+  },
+  "relationship_types": {
+    "is_a": {
+      "is_core": true,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": null
+    },
+    "part_of": {
+      "is_core": true,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": null
+    },
+    "requires": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": null
+    },
+    "depends_on": {
+      "is_core": true,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": null
+    },
+    "related_to": {
+      "is_core": true,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": null
+    },
+    "location_of": {
+      "is_core": false,
+      "from_type": "location",
+      "to_type": "market",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "targets": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "prefers": {
+      "is_core": false,
+      "from_type": "consumer_segment",
+      "to_type": "trend",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "impacts": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "competes_with": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "offers": {
+      "is_core": false,
+      "from_type": "distribution_channel",
+      "to_type": "trend",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "supports": {
+      "is_core": false,
+      "from_type": "trend",
+      "to_type": "subcategory",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "drives": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "subcategory_of": {
+      "is_core": false,
+      "from_type": "subcategory",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "drives_growth_in": {
+      "is_core": false,
+      "from_type": "category",
+      "to_type": "category",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "owns": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "brand",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "drives_growth_on": {
+      "is_core": false,
+      "from_type": "trend",
+      "to_type": "distribution_channel",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "operates_in": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "launches_in": {
+      "is_core": false,
+      "from_type": "company",
+      "to_type": "location",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "provides_opportunities_for": {
+      "is_core": false,
+      "from_type": "trend",
+      "to_type": "entity",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "codevelops_with": {
+      "is_core": false,
+      "from_type": "brand",
+      "to_type": "company",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "developed_by": {
+      "is_core": false,
+      "from_type": "product",
+      "to_type": "company",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "strategy_is": {
+      "is_core": false,
+      "from_type": "company",
+      "to_type": "trend",
+      "direction": null,
+      "created_at": "2026-01-23T11:07:51Z"
+    },
+    "located_in": {
+      "is_core": false,
+      "from_type": "market",
+      "to_type": "location",
+      "direction": null,
+      "created_at": "2026-01-23T11:10:40Z"
+    },
+    "develops": {
+      "is_core": false,
+      "from_type": "entity",
+      "to_type": "product",
+      "direction": null,
+      "created_at": "2026-01-23T11:10:40Z"
+    },
+    "successor_to": {
+      "is_core": false,
+      "from_type": "product",
+      "to_type": "brand",
+      "direction": null,
+      "created_at": "2026-01-23T11:10:40Z"
+    }
+  },
+  "normalization_rules": {},
+  "history": [],
+  "graph": {
+    "domain": "market research",
+    "schema_version": "1.0.2",
+    "entities": [
+      {
+        "id": "entity_type_entity",
+        "canonical_key": "entity",
+        "label": "entity",
+        "type": "EntityType",
+        "description": "Entity type: entity",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": true
+        },
+        "metadata": {
+          "created_at": null,
+          "parent_type": null
+        }
+      },
+      {
+        "id": "entity_type_market",
+        "canonical_key": "market",
+        "label": "market",
+        "type": "EntityType",
+        "description": "Entity type: market",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_location",
+        "canonical_key": "location",
+        "label": "location",
+        "type": "EntityType",
+        "description": "Entity type: location",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_consumer_segment",
+        "canonical_key": "consumer_segment",
+        "label": "consumer_segment",
+        "type": "EntityType",
+        "description": "Entity type: consumer_segment",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_category",
+        "canonical_key": "category",
+        "label": "category",
+        "type": "EntityType",
+        "description": "Entity type: category",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_trend",
+        "canonical_key": "trend",
+        "label": "trend",
+        "type": "EntityType",
+        "description": "Entity type: trend",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_distribution_channel",
+        "canonical_key": "distribution_channel",
+        "label": "distribution_channel",
+        "type": "EntityType",
+        "description": "Entity type: distribution_channel",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_subcategory",
+        "canonical_key": "subcategory",
+        "label": "subcategory",
+        "type": "EntityType",
+        "description": "Entity type: subcategory",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_brand",
+        "canonical_key": "brand",
+        "label": "brand",
+        "type": "EntityType",
+        "description": "Entity type: brand",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_company",
+        "canonical_key": "company",
+        "label": "company",
+        "type": "EntityType",
+        "description": "Entity type: company",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_metric",
+        "canonical_key": "metric",
+        "label": "metric",
+        "type": "EntityType",
+        "description": "Entity type: metric",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_product",
+        "canonical_key": "product",
+        "label": "product",
+        "type": "EntityType",
+        "description": "Entity type: product",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_regulation",
+        "canonical_key": "regulation",
+        "label": "regulation",
+        "type": "EntityType",
+        "description": "Entity type: regulation",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_organization",
+        "canonical_key": "organization",
+        "label": "organization",
+        "type": "EntityType",
+        "description": "Entity type: organization",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:07:51Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_consumer segment",
+        "canonical_key": "consumer segment",
+        "label": "consumer segment",
+        "type": "EntityType",
+        "description": "Entity type: consumer segment",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:10:40Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_distribution channel",
+        "canonical_key": "distribution channel",
+        "label": "distribution channel",
+        "type": "EntityType",
+        "description": "Entity type: distribution channel",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:10:40Z",
+          "parent_type": "entity"
+        }
+      },
+      {
+        "id": "entity_type_event",
+        "canonical_key": "event",
+        "label": "event",
+        "type": "EntityType",
+        "description": "Entity type: event",
+        "aliases": [],
+        "properties": {
+          "fields": [
+            "id",
+            "label",
+            "aliases",
+            "description"
+          ],
+          "required_fields": [
+            "id",
+            "label"
+          ],
+          "is_core": false
+        },
+        "metadata": {
+          "created_at": "2026-01-23T11:10:40Z",
+          "parent_type": "entity"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "id": "extends_entity_market",
+        "from_": "entity_type_entity",
+        "to": "entity_type_market",
+        "type": "EXTENDS",
+        "description": "market extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_location",
+        "from_": "entity_type_entity",
+        "to": "entity_type_location",
+        "type": "EXTENDS",
+        "description": "location extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_consumer_segment",
+        "from_": "entity_type_entity",
+        "to": "entity_type_consumer_segment",
+        "type": "EXTENDS",
+        "description": "consumer_segment extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_category",
+        "from_": "entity_type_entity",
+        "to": "entity_type_category",
+        "type": "EXTENDS",
+        "description": "category extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_trend",
+        "from_": "entity_type_entity",
+        "to": "entity_type_trend",
+        "type": "EXTENDS",
+        "description": "trend extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_distribution_channel",
+        "from_": "entity_type_entity",
+        "to": "entity_type_distribution_channel",
+        "type": "EXTENDS",
+        "description": "distribution_channel extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_subcategory",
+        "from_": "entity_type_entity",
+        "to": "entity_type_subcategory",
+        "type": "EXTENDS",
+        "description": "subcategory extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_brand",
+        "from_": "entity_type_entity",
+        "to": "entity_type_brand",
+        "type": "EXTENDS",
+        "description": "brand extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_company",
+        "from_": "entity_type_entity",
+        "to": "entity_type_company",
+        "type": "EXTENDS",
+        "description": "company extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_metric",
+        "from_": "entity_type_entity",
+        "to": "entity_type_metric",
+        "type": "EXTENDS",
+        "description": "metric extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_product",
+        "from_": "entity_type_entity",
+        "to": "entity_type_product",
+        "type": "EXTENDS",
+        "description": "product extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_regulation",
+        "from_": "entity_type_entity",
+        "to": "entity_type_regulation",
+        "type": "EXTENDS",
+        "description": "regulation extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_organization",
+        "from_": "entity_type_entity",
+        "to": "entity_type_organization",
+        "type": "EXTENDS",
+        "description": "organization extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_consumer segment",
+        "from_": "entity_type_entity",
+        "to": "entity_type_consumer segment",
+        "type": "EXTENDS",
+        "description": "consumer segment extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_distribution channel",
+        "from_": "entity_type_entity",
+        "to": "entity_type_distribution channel",
+        "type": "EXTENDS",
+        "description": "distribution channel extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "extends_entity_event",
+        "from_": "entity_type_entity",
+        "to": "entity_type_event",
+        "type": "EXTENDS",
+        "description": "event extends entity",
+        "properties": {},
+        "metadata": {
+          "link_type": "hierarchy"
+        }
+      },
+      {
+        "id": "rel_def_is_a_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "is_a",
+        "description": "Relationship type is_a from entity to entity",
+        "properties": {
+          "is_core": true
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": null
+        }
+      },
+      {
+        "id": "rel_def_part_of_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "part_of",
+        "description": "Relationship type part_of from entity to entity",
+        "properties": {
+          "is_core": true
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": null
+        }
+      },
+      {
+        "id": "rel_def_requires_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "requires",
+        "description": "Relationship type requires from entity to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": null
+        }
+      },
+      {
+        "id": "rel_def_depends_on_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "depends_on",
+        "description": "Relationship type depends_on from entity to entity",
+        "properties": {
+          "is_core": true
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": null
+        }
+      },
+      {
+        "id": "rel_def_related_to_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "related_to",
+        "description": "Relationship type related_to from entity to entity",
+        "properties": {
+          "is_core": true
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": null
+        }
+      },
+      {
+        "id": "rel_def_location_of_location_market",
+        "from_": "entity_type_location",
+        "to": "entity_type_market",
+        "type": "location_of",
+        "description": "Relationship type location_of from location to market",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_targets_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "targets",
+        "description": "Relationship type targets from entity to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_prefers_consumer_segment_trend",
+        "from_": "entity_type_consumer_segment",
+        "to": "entity_type_trend",
+        "type": "prefers",
+        "description": "Relationship type prefers from consumer_segment to trend",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_impacts_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "impacts",
+        "description": "Relationship type impacts from entity to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_competes_with_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "competes_with",
+        "description": "Relationship type competes_with from entity to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_offers_distribution_channel_trend",
+        "from_": "entity_type_distribution_channel",
+        "to": "entity_type_trend",
+        "type": "offers",
+        "description": "Relationship type offers from distribution_channel to trend",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_supports_trend_subcategory",
+        "from_": "entity_type_trend",
+        "to": "entity_type_subcategory",
+        "type": "supports",
+        "description": "Relationship type supports from trend to subcategory",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_drives_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "drives",
+        "description": "Relationship type drives from entity to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_subcategory_of_subcategory_entity",
+        "from_": "entity_type_subcategory",
+        "to": "entity_type_entity",
+        "type": "subcategory_of",
+        "description": "Relationship type subcategory_of from subcategory to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_drives_growth_in_category_category",
+        "from_": "entity_type_category",
+        "to": "entity_type_category",
+        "type": "drives_growth_in",
+        "description": "Relationship type drives_growth_in from category to category",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_owns_entity_brand",
+        "from_": "entity_type_entity",
+        "to": "entity_type_brand",
+        "type": "owns",
+        "description": "Relationship type owns from entity to brand",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_drives_growth_on_trend_distribution_channel",
+        "from_": "entity_type_trend",
+        "to": "entity_type_distribution_channel",
+        "type": "drives_growth_on",
+        "description": "Relationship type drives_growth_on from trend to distribution_channel",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_operates_in_entity_entity",
+        "from_": "entity_type_entity",
+        "to": "entity_type_entity",
+        "type": "operates_in",
+        "description": "Relationship type operates_in from entity to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_launches_in_company_location",
+        "from_": "entity_type_company",
+        "to": "entity_type_location",
+        "type": "launches_in",
+        "description": "Relationship type launches_in from company to location",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_provides_opportunities_for_trend_entity",
+        "from_": "entity_type_trend",
+        "to": "entity_type_entity",
+        "type": "provides_opportunities_for",
+        "description": "Relationship type provides_opportunities_for from trend to entity",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_codevelops_with_brand_company",
+        "from_": "entity_type_brand",
+        "to": "entity_type_company",
+        "type": "codevelops_with",
+        "description": "Relationship type codevelops_with from brand to company",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_developed_by_product_company",
+        "from_": "entity_type_product",
+        "to": "entity_type_company",
+        "type": "developed_by",
+        "description": "Relationship type developed_by from product to company",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_strategy_is_company_trend",
+        "from_": "entity_type_company",
+        "to": "entity_type_trend",
+        "type": "strategy_is",
+        "description": "Relationship type strategy_is from company to trend",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:07:51Z"
+        }
+      },
+      {
+        "id": "rel_def_located_in_market_location",
+        "from_": "entity_type_market",
+        "to": "entity_type_location",
+        "type": "located_in",
+        "description": "Relationship type located_in from market to location",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:10:40Z"
+        }
+      },
+      {
+        "id": "rel_def_develops_entity_product",
+        "from_": "entity_type_entity",
+        "to": "entity_type_product",
+        "type": "develops",
+        "description": "Relationship type develops from entity to product",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:10:40Z"
+        }
+      },
+      {
+        "id": "rel_def_successor_to_product_brand",
+        "from_": "entity_type_product",
+        "to": "entity_type_brand",
+        "type": "successor_to",
+        "description": "Relationship type successor_to from product to brand",
+        "properties": {
+          "is_core": false
+        },
+        "metadata": {
+          "link_type": "relationship",
+          "created_at": "2026-01-23T11:10:40Z"
+        }
+      }
+    ]
+  }
+}

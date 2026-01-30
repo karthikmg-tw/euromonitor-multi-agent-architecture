@@ -1,0 +1,74 @@
+EUROMONITOR PASSPORT – TOYS AND GAMES (INDIA)
+
+GEOGRAPHY
+- Country: India
+
+MARKET
+- Market Name: Toys and Games
+- Industry: Consumer Goods
+- Data Context: Euromonitor Passport
+- Year Reference: 2025 (extracted July 1, 2025)
+
+MEASURES / METRICS
+- Market Size
+- Unit Price
+- Company Share (NBO)
+- Company Share (GBO)
+- Brand Share (LBN)
+- Brand Share (GBN)
+- Channel Share
+
+CATEGORY TAXONOMY
+
+Toys and Games
+├── Traditional Toys and Games
+│   ├── Baby and Infant
+│   ├── Action Figures and Accessories
+│   ├── Arts and Crafts
+│   ├── Construction
+│   ├── Dolls and Accessories
+│   ├── Dress-Up and Role Play
+│   ├── Games and Puzzles
+│   ├── Model Vehicles
+│   ├── Outdoor and Sports
+│   ├── Plush
+│   ├── Pre-School
+│   ├── Remote Control Toys
+│   ├── Ride-On Vehicles
+│   ├── Scientific / Educational
+│   └── Other Traditional Toys and Games
+│
+└── Video Games
+    ├── Video Games Hardware
+    │   ├── Hand-Held Consoles
+    │   ├── Static Consoles
+    │   └── Gaming Headsets
+    │
+    └── Video Games Software
+        ├── Physical
+        │   ├── Computer Games (Physical)
+        │   └── Console Games (Physical)
+        │
+        ├── Digital
+        │   ├── Computer Games (Digital)
+        │   ├── Console Games (Digital)
+        │   ├── Online Games and Subscriptions
+        │   └── Mobile Games
+        │
+        ├── By Platform
+        │   ├── Console Games
+        │   └── Computer Games
+        │
+        └── By Format
+            ├── Game Sales
+            │   ├── Computer Games (Game Sales)
+            │   ├── Console Games (Game Sales)
+            │   ├── Online Games and Subscriptions (Game Sales)
+            │   └── Mobile Games (Game Sales)
+
+ONTOLOGY HINTS (IMPLICIT RELATIONSHIPS)
+- Market (Toys and Games) located_in India
+- Category part_of Market
+- Subcategory part_of Category
+- Metrics measured_for Market or Category
+- Video Games is a Category distinct from Traditional Toys and Games
