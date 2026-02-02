@@ -7,11 +7,11 @@ import logging
 import os
 from dotenv import load_dotenv
 
-from app.services.graph_service import GraphService
+from app.services.graph_service_v2 import GraphServiceV2
 from app.services.vector_search import VectorSearchService
 from app.services.embedding_service import EmbeddingService
 from app.services.llm_service import LLMService
-from app.services.rag_service import RAGService
+from app.services.rag_service_v2 import RAGServiceV2
 from app.models.schemas import (
     ChatRequest,
     ChatResponse,
@@ -48,7 +48,7 @@ app.add_middleware(
 )
 
 # Global services (initialized on startup)
-rag_service: RAGService = None
+rag_service: RAGServiceV2 = None
 
 
 @app.on_event("startup")
@@ -68,9 +68,9 @@ async def startup_event():
     if not all([graph_path, embeddings_path, schema_path, anthropic_api_key]):
         raise ValueError("Missing required environment variables. Check .env file.")
 
-    # Initialize services
-    logger.info("Initializing Graph Service...")
-    graph_service = GraphService(graph_path, schema_path)
+    # Initialize services (using V2 with chunk support)
+    logger.info("Initializing Graph Service V2 (with chunks)...")
+    graph_service = GraphServiceV2(graph_path, schema_path)
 
     logger.info("Initializing Vector Search Service...")
     vector_search = VectorSearchService(embeddings_path)
@@ -81,11 +81,11 @@ async def startup_event():
     logger.info("Initializing LLM Service...")
     llm_service = LLMService(anthropic_api_key)
 
-    logger.info("Initializing RAG Service...")
-    rag_service = RAGService(
+    logger.info("Initializing RAG Service V2 (dual-source)...")
+    rag_service = RAGServiceV2(
         graph_service=graph_service,
-        vector_search=vector_search,
         embedding_service=embedding_service,
+        vector_search_service=vector_search,
         llm_service=llm_service
     )
 
@@ -122,7 +122,7 @@ async def health_check():
     }
 
 
-@app.post("/chat", response_model=ChatResponse)
+@app.post("/chat", response_model=ChatResponse, response_model_exclude_none=True)
 async def chat(request: ChatRequest):
     """
     Main chat endpoint - answer questions using RAG pipeline.
@@ -141,8 +141,11 @@ async def chat(request: ChatRequest):
         result = rag_service.query(
             user_query=request.query,
             top_k=request.top_k,
+            entity_weight=request.entity_weight,
+            chunk_weight=request.chunk_weight,
             include_relationships=request.include_relationships,
-            min_similarity=request.min_similarity
+            min_similarity=request.min_similarity,
+            debug=request.debug
         )
 
         # Format response
@@ -151,7 +154,7 @@ async def chat(request: ChatRequest):
         response = ChatResponse(
             answer=result['answer'],
             sources=sources,
-            debug=result['debug'] if request.debug else None
+            debug=result.get('debug') if request.debug else None
         )
 
         return response

@@ -19,7 +19,7 @@ class LLMService:
             api_key: Anthropic API key
         """
         self.client = anthropic.Anthropic(api_key=api_key)
-        # Use Claude 3 Haiku - available with this API key
+        # Use Claude 3 Haiku - fast and cost-effective with enhanced prompts
         self.model = "claude-3-haiku-20240307"
         logger.info("LLM service initialized with Claude 3 Haiku")
 
@@ -123,24 +123,69 @@ Answer the question using only the context provided above. Cite specific entitie
 
     def generate_simple_response(self, query: str, context: str) -> str:
         """
-        Simpler interface for generating responses.
+        Simpler interface for generating responses with narrative synthesis.
 
         Args:
             query: User question
-            context: Pre-formatted context string
+            context: Pre-formatted context string (entities + document chunks)
 
         Returns:
             Generated response
         """
+        # Enhanced system prompt for narrative synthesis
+        system_prompt = """You are an expert market research analyst who synthesizes insights from both structured knowledge and detailed source documents.
+
+Your context includes:
+- **Entities**: Structured concepts with definitions (markets, trends, companies, etc.)
+- **Document Excerpts**: Detailed narrative passages from research reports
+
+Your analysis style:
+1. **Narrative Integration**: Weave structured definitions with concrete examples from documents
+2. **Evidence-Based**: Support claims with specific data points, statistics, and examples when available
+3. **Analytical Depth**: Go beyond "what" to explain "why," "how," and "so what"
+4. **Balanced Perspective**: Discuss trade-offs, challenges, and nuances - not just benefits
+5. **Clear Structure**: Use headings, bullet points, and logical flow for complex topics
+
+Response Guidelines:
+- Start with a direct answer to the question
+- Support with specific examples and data from document excerpts
+- Reference entities by name when introducing concepts
+- Include quantitative evidence when present (percentages, dollar amounts, growth rates)
+- Discuss both opportunities AND challenges when relevant
+- Maintain professional, analytical tone
+- If information is insufficient, clearly state what's missing
+
+Base everything strictly on the provided context. Never invent information."""
+
+        # Enhanced user prompt with explicit instructions
+        user_prompt = f"""**Question:**
+{query}
+
+---
+
+**Context (Retrieved Information):**
+{context}
+
+---
+
+**Instructions:**
+Using the entities and document excerpts above, provide a comprehensive, well-structured answer that:
+- Integrates both structured concepts and detailed examples
+- Includes specific data and evidence from the excerpts
+- Explains the reasoning and implications
+- Discusses relevant trade-offs or challenges
+
+Your answer:"""
+
         try:
             response = self.client.messages.create(
                 model=self.model,
                 max_tokens=2048,
                 temperature=0.3,
-                system="You are a helpful market research assistant. Answer questions based only on the provided context.",
+                system=system_prompt,
                 messages=[{
                     "role": "user",
-                    "content": f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+                    "content": user_prompt
                 }]
             )
 
